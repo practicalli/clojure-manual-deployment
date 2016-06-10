@@ -1,0 +1,2214 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <title>Profiles overview · Clojure, Practicalli</title>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.0.3">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-toggle-chapters/toggle.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-richquotes/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-disqus/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-exercises/exercises.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-quizzes/quizzes.css">
+                
+            
+                
+                <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-sectionx/sectionx.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+        <link rel="stylesheet" href="../styles/website.css">
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="adding-a-dev-profile.html" />
+    
+    
+    <link rel="prev" href="run-the-repl.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    Introduction
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="../using-the-workshop/">
+            
+                <a href="../using-the-workshop/">
+            
+                    
+                    How to use the workshop
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.1" data-path="../using-the-workshop/requirements.html">
+            
+                <a href="../using-the-workshop/requirements.html">
+            
+                    
+                    Technical Requirements
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2" data-path="../using-the-workshop/code-examples.html">
+            
+                <a href="../using-the-workshop/code-examples.html">
+            
+                    
+                    Code Examples
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="../development-environments/">
+            
+                <a href="../development-environments/">
+            
+                    
+                    Development Environments
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1" data-path="../development-environments/java.html">
+            
+                <a href="../development-environments/java.html">
+            
+                    
+                    Java
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2" data-path="../development-environments/leiningen.html">
+            
+                <a href="../development-environments/leiningen.html">
+            
+                    
+                    Leiningen
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3" data-path="../development-environments/lighttable.html">
+            
+                <a href="../development-environments/lighttable.html">
+            
+                    
+                    LightTable
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.4" data-path="../development-environments/other-tools.html">
+            
+                <a href="../development-environments/other-tools.html">
+            
+                    
+                    Other tools
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="../overview/">
+            
+                <a href="../overview/">
+            
+                    
+                    Overview of Clojure
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.1" data-path="../overview/purpose.html">
+            
+                <a href="../overview/purpose.html">
+            
+                    
+                    When to use Clojure
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.2" data-path="../overview/who-uses-clojure.html">
+            
+                <a href="../overview/who-uses-clojure.html">
+            
+                    
+                    Who uses Clojure
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.3" data-path="../overview/syntax.html">
+            
+                <a href="../overview/syntax.html">
+            
+                    
+                    The syntax
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.4" data-path="../overview/design.html">
+            
+                <a href="../overview/design.html">
+            
+                    
+                    Design
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.5" data-path="../overview/repl.html">
+            
+                <a href="../overview/repl.html">
+            
+                    
+                    Read, Evaluate, Print Loop (REPL)
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.6" data-path="../overview/all-bytecode-in-the-end.html">
+            
+                <a href="../overview/all-bytecode-in-the-end.html">
+            
+                    
+                    All bytecode in the end
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.7" data-path="../overview/features.html">
+            
+                <a href="../overview/features.html">
+            
+                    
+                    Features in more depth
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="../basic-clojure/">
+            
+                <a href="../basic-clojure/">
+            
+                    
+                    Some Basic Clojure
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.5.1" data-path="../basic-clojure/whats-my-environment.html">
+            
+                <a href="../basic-clojure/whats-my-environment.html">
+            
+                    
+                    Whats my environment
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.2" data-path="../basic-clojure/reading-project-file.html">
+            
+                <a href="../basic-clojure/reading-project-file.html">
+            
+                    
+                    Reading project file
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.3" data-path="../basic-clojure/threading-syntactic-sugar.html">
+            
+                <a href="../basic-clojure/threading-syntactic-sugar.html">
+            
+                    
+                    Threading syntactic sugar
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.4" data-path="../basic-clojure/show-me-the-docs.html">
+            
+                <a href="../basic-clojure/show-me-the-docs.html">
+            
+                    
+                    Show me the docs
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.5" data-path="../basic-clojure/java-interop.html">
+            
+                <a href="../basic-clojure/java-interop.html">
+            
+                    
+                    Java Interoperability
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.6" data-path="../basic-clojure/more-java-fun.html">
+            
+                <a href="../basic-clojure/more-java-fun.html">
+            
+                    
+                    More Java fun
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.7" data-path="../basic-clojure/quick-look-at-types.html">
+            
+                <a href="../basic-clojure/quick-look-at-types.html">
+            
+                    
+                    Quick look at Types
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.8" data-path="../basic-clojure/strings.html">
+            
+                <a href="../basic-clojure/strings.html">
+            
+                    
+                    Strings
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.9" data-path="../basic-clojure/numbers-maths.html">
+            
+                <a href="../basic-clojure/numbers-maths.html">
+            
+                    
+                    Numbers & Maths
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.10" data-path="../basic-clojure/ratios.html">
+            
+                <a href="../basic-clojure/ratios.html">
+            
+                    
+                    Ratios
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.11" data-path="../basic-clojure/assigning-names.html">
+            
+                <a href="../basic-clojure/assigning-names.html">
+            
+                    
+                    Assigning Names
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.12" data-path="../basic-clojure/defining-functions.html">
+            
+                <a href="../basic-clojure/defining-functions.html">
+            
+                    
+                    Defining Functions
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.13" data-path="../basic-clojure/namespace.html">
+            
+                <a href="../basic-clojure/namespace.html">
+            
+                    
+                    Namespace
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.14" data-path="../basic-clojure/control-flow.html">
+            
+                <a href="../basic-clojure/control-flow.html">
+            
+                    
+                    Control flow
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" data-path="../data-structures/">
+            
+                <a href="../data-structures/">
+            
+                    
+                    Data structures
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.6.1" data-path="../data-structures/list.html">
+            
+                <a href="../data-structures/list.html">
+            
+                    
+                    List
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.2" data-path="../data-structures/map.html">
+            
+                <a href="../data-structures/map.html">
+            
+                    
+                    Map
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.3" data-path="../data-structures/vector.html">
+            
+                <a href="../data-structures/vector.html">
+            
+                    
+                    Vector
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.4" data-path="../data-structures/set.html">
+            
+                <a href="../data-structures/set.html">
+            
+                    
+                    Set
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7" data-path="../using-data-structures/">
+            
+                <a href="../using-data-structures/">
+            
+                    
+                    Using data structures
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.7.1" data-path="../using-data-structures/applying-functions.html">
+            
+                <a href="../using-data-structures/applying-functions.html">
+            
+                    
+                    Applying functions
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.2" data-path="../using-data-structures/mapping-data-structures.html">
+            
+                <a href="../using-data-structures/mapping-data-structures.html">
+            
+                    
+                    Mapping functions
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8" data-path="../modifying-data-structures/">
+            
+                <a href="../modifying-data-structures/">
+            
+                    
+                    Modifying data structures
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.8.1" data-path="../modifying-data-structures/lists.html">
+            
+                <a href="../modifying-data-structures/lists.html">
+            
+                    
+                    Lists
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.2" data-path="../modifying-data-structures/maps.html">
+            
+                <a href="../modifying-data-structures/maps.html">
+            
+                    
+                    Maps
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.3" data-path="../modifying-data-structures/vectors.html">
+            
+                <a href="../modifying-data-structures/vectors.html">
+            
+                    
+                    Vectors
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.4" data-path="../modifying-data-structures/sets.html">
+            
+                <a href="../modifying-data-structures/sets.html">
+            
+                    
+                    Sets
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9" data-path="../defining-behaviour-with-functions/">
+            
+                <a href="../defining-behaviour-with-functions/">
+            
+                    
+                    Defing behaviour with Functions
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.9.1" data-path="../defining-behaviour-with-functions/syntax.html">
+            
+                <a href="../defining-behaviour-with-functions/syntax.html">
+            
+                    
+                    Syntax
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.2" data-path="../defining-behaviour-with-functions/calling-functions.html">
+            
+                <a href="../defining-behaviour-with-functions/calling-functions.html">
+            
+                    
+                    Calling functions
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.3" data-path="../defining-behaviour-with-functions/examples.html">
+            
+                <a href="../defining-behaviour-with-functions/examples.html">
+            
+                    
+                    Examples
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.4" data-path="../defining-behaviour-with-functions/parameters.html">
+            
+                <a href="../defining-behaviour-with-functions/parameters.html">
+            
+                    
+                    Parameters
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.5" data-path="../defining-behaviour-with-functions/using-functions-over-data-structures.html">
+            
+                <a href="../defining-behaviour-with-functions/using-functions-over-data-structures.html">
+            
+                    
+                    Using Functions over data structures
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10" data-path="../defining-functions/">
+            
+                <a href="../defining-functions/">
+            
+                    
+                    Defining fuctions
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.10.1" data-path="../defining-functions/let-local-values.html">
+            
+                <a href="../defining-functions/let-local-values.html">
+            
+                    
+                    let local values
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11" data-path="../control-flow/">
+            
+                <a href="../control-flow/">
+            
+                    
+                    Control flow
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.11.1" data-path="../control-flow/if.html">
+            
+                <a href="../control-flow/if.html">
+            
+                    
+                    if
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11.2" data-path="../control-flow/cond.html">
+            
+                <a href="../control-flow/cond.html">
+            
+                    
+                    cond
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11.3" data-path="../control-flow/when.html">
+            
+                <a href="../control-flow/when.html">
+            
+                    
+                    when
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12" data-path="../local-assignement/">
+            
+                <a href="../local-assignement/">
+            
+                    
+                    Local Assignment
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.13" data-path="../simple-project/">
+            
+                <a href="../simple-project/">
+            
+                    
+                    Simple project
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.13.1" data-path="../simple-project/create-project.html">
+            
+                <a href="../simple-project/create-project.html">
+            
+                    
+                    Create a project
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.13.2" data-path="../simple-project/run-the-repl.html">
+            
+                <a href="../simple-project/run-the-repl.html">
+            
+                    
+                    Run the REPL
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.14" data-path="../what-is-functional-programming/">
+            
+                <a href="../what-is-functional-programming/">
+            
+                    
+                    What is Functional Programming
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.15" data-path="../thinking-functionally/">
+            
+                <a href="../thinking-functionally/">
+            
+                    
+                    Thinking Functionally
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.15.1" data-path="../thinking-functionally/side-effects.html">
+            
+                <a href="../thinking-functionally/side-effects.html">
+            
+                    
+                    Side effects
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.15.2" data-path="../thinking-functionally/pure-functions.html">
+            
+                <a href="../thinking-functionally/pure-functions.html">
+            
+                    
+                    Pure functions
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.15.3" data-path="../thinking-functionally/impure-functions.html">
+            
+                <a href="../thinking-functionally/impure-functions.html">
+            
+                    
+                    Impure functions
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.15.4" data-path="../thinking-functionally/first-class-functions.html">
+            
+                <a href="../thinking-functionally/first-class-functions.html">
+            
+                    
+                    First Class functions
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.15.5" data-path="../thinking-functionally/homoiconicity.html">
+            
+                <a href="../thinking-functionally/homoiconicity.html">
+            
+                    
+                    Homoiconicity
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.15.6" data-path="../thinking-functionally/higher-order-functions.html">
+            
+                <a href="../thinking-functionally/higher-order-functions.html">
+            
+                    
+                    Higher Order functions
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.15.7" data-path="../thinking-functionally/chaining-functions.html">
+            
+                <a href="../thinking-functionally/chaining-functions.html">
+            
+                    
+                    Chaining functions
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.15.7.1" data-path="../thinking-functionally/threading-macros.html">
+            
+                <a href="../thinking-functionally/threading-macros.html">
+            
+                    
+                    Threading macros
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.15.7.2" data-path="../thinking-functionally/example-hitchhikers-guide.html">
+            
+                <a href="../thinking-functionally/example-hitchhikers-guide.html">
+            
+                    
+                    Example: Hitchhikers Guide
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.15.8" data-path="../thinking-functionally/immutable.html">
+            
+                <a href="../thinking-functionally/immutable.html">
+            
+                    
+                    Immutability
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.15.8.1" data-path="../thinking-functionally/copying-collections.html">
+            
+                <a href="../thinking-functionally/copying-collections.html">
+            
+                    
+                    Copying collections
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.15.8.2" data-path="../thinking-functionally/persistent-data-structures.html">
+            
+                <a href="../thinking-functionally/persistent-data-structures.html">
+            
+                    
+                    Persistent data structures
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.15.9" data-path="../thinking-functionally/list-comprehension.html">
+            
+                <a href="../thinking-functionally/list-comprehension.html">
+            
+                    
+                    List Comprehension
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.15.10" data-path="../thinking-functionally/lazy-evaluation.html">
+            
+                <a href="../thinking-functionally/lazy-evaluation.html">
+            
+                    
+                    Lazy Evaluation
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.15.11" data-path="../thinking-functionally/sequences.html">
+            
+                <a href="../thinking-functionally/sequences.html">
+            
+                    
+                    Sequences
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.15.12" data-path="../thinking-functionally/sequence-abstractions.html">
+            
+                <a href="../thinking-functionally/sequence-abstractions.html">
+            
+                    
+                    Sequence-abstraction
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.15.13" data-path="../thinking-functionally/functors.html">
+            
+                <a href="../thinking-functionally/functors.html">
+            
+                    
+                    Functors
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.15.14" data-path="../thinking-functionally/arity.html">
+            
+                <a href="../thinking-functionally/arity.html">
+            
+                    
+                    Arity
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.15.15" data-path="../thinking-functionally/pattern-matching.html">
+            
+                <a href="../thinking-functionally/pattern-matching.html">
+            
+                    
+                    Pattern matching
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.15.16" data-path="../thinking-functionally/polymorphism.html">
+            
+                <a href="../thinking-functionally/polymorphism.html">
+            
+                    
+                    Polymorphism
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.15.17" data-path="../thinking-functionally/recursion.html">
+            
+                <a href="../thinking-functionally/recursion.html">
+            
+                    
+                    Recursion
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.15.18" data-path="../thinking-functionally/recursion-polymorphism.html">
+            
+                <a href="../thinking-functionally/recursion-polymorphism.html">
+            
+                    
+                    Recursion & Polymorphism
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.15.19" data-path="../thinking-functionally/tail-recursion.html">
+            
+                <a href="../thinking-functionally/tail-recursion.html">
+            
+                    
+                    Tail recursion
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.15.20" data-path="../thinking-functionally/partial-functions.html">
+            
+                <a href="../thinking-functionally/partial-functions.html">
+            
+                    
+                    Currying & Partial Functions
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.15.21" data-path="../thinking-functionally/anonymous-functions.html">
+            
+                <a href="../thinking-functionally/anonymous-functions.html">
+            
+                    
+                    Anonymous Functions
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.15.22" data-path="../thinking-functionally/naming.html">
+            
+                <a href="../thinking-functionally/naming.html">
+            
+                    
+                    Naming
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.15.22.1" data-path="../thinking-functionally/global-definitions.html">
+            
+                <a href="../thinking-functionally/global-definitions.html">
+            
+                    
+                    Global definitions
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.15.22.2" data-path="../thinking-functionally/local-bindings.html">
+            
+                <a href="../thinking-functionally/local-bindings.html">
+            
+                    
+                    Local Bindings
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.15.22.3" data-path="../thinking-functionally/private-functions.html">
+            
+                <a href="../thinking-functionally/private-functions.html">
+            
+                    
+                    Private functions
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.16" data-path="../thinking-functionally/managing-state-changes.html">
+            
+                <a href="../thinking-functionally/managing-state-changes.html">
+            
+                    
+                    Managing state changes
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.17" data-path="../libraries/">
+            
+                <a href="../libraries/">
+            
+                    
+                    Libraries
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.17.1" data-path="../libraries/clojars.html">
+            
+                <a href="../libraries/clojars.html">
+            
+                    
+                    Clojars
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.17.2" data-path="../libraries/om.html">
+            
+                <a href="../libraries/om.html">
+            
+                    
+                    om
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.17.3" data-path="../libraries/edn.html">
+            
+                <a href="../libraries/edn.html">
+            
+                    
+                    edn
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.18" data-path="../testing/">
+            
+                <a href="../testing/">
+            
+                    
+                    Testing
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.18.1" data-path="../testing/">
+            
+                <a href="../testing/">
+            
+                    
+                    Testing
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.18.2" data-path="../testing/">
+            
+                <a href="../testing/">
+            
+                    
+                    Testing
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.18.3" data-path="../testing/">
+            
+                <a href="../testing/">
+            
+                    
+                    Testing
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.19" data-path="./">
+            
+                <a href="./">
+            
+                    
+                    Leiningen Configuration
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.19.1" data-path="create-a-project.html">
+            
+                <a href="create-a-project.html">
+            
+                    
+                    Create a project
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.19.2" data-path="run-the-repl.html">
+            
+                <a href="run-the-repl.html">
+            
+                    
+                    Run the REPL
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.19.3" data-path="profile.html">
+            
+                <a href="profile.html">
+            
+                    
+                    Profiles overview
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.19.4" data-path="adding-a-dev-profile.html">
+            
+                <a href="adding-a-dev-profile.html">
+            
+                    
+                    Adding a dev profile
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.19.5" data-path="templates.html">
+            
+                <a href="templates.html">
+            
+                    
+                    Templates
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.19.6" data-path="create-a-template.html">
+            
+                <a href="create-a-template.html">
+            
+                    
+                    Create a template
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.19.7" data-path="plugins.html">
+            
+                <a href="plugins.html">
+            
+                    
+                    Plugins
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.20" data-path="../explaining-macros.html">
+            
+                <a href="../explaining-macros.html">
+            
+                    
+                    Explaining Macros
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.21" data-path="../work-in-progress.html">
+            
+                <a href="../work-in-progress.html">
+            
+                    
+                    Work in Progress
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.22" data-path="../where-next.html">
+            
+                <a href="../where-next.html">
+            
+                    
+                    Where next
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.23" data-path="../reference/">
+            
+                <a href="../reference/">
+            
+                    
+                    Reference
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.23.1" data-path="../reference/basic-syntax.html">
+            
+                <a href="../reference/basic-syntax.html">
+            
+                    
+                    Basic Syntax
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.23.2" data-path="../reference/naming.html">
+            
+                <a href="../reference/naming.html">
+            
+                    
+                    Naming
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.23.3" data-path="../reference/naming-conventions.html">
+            
+                <a href="../reference/naming-conventions.html">
+            
+                    
+                    Naming Conventions
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.23.4" data-path="../reference/functions.html">
+            
+                <a href="../reference/functions.html">
+            
+                    
+                    Functions
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.23.5" data-path="../reference/sequences.html">
+            
+                <a href="../reference/sequences.html">
+            
+                    
+                    Sequences
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.23.6" data-path="../reference/control-flow.html">
+            
+                <a href="../reference/control-flow.html">
+            
+                    
+                    Control Flow
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.23.7" data-path="../reference/persistent-data-structures.html">
+            
+                <a href="../reference/persistent-data-structures.html">
+            
+                    
+                    Persistent Data Structures
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.23.8" data-path="../reference/changing-state.html">
+            
+                <a href="../reference/changing-state.html">
+            
+                    
+                    Changing State
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.23.9" data-path="../reference/reader-macros.html">
+            
+                <a href="../reference/reader-macros.html">
+            
+                    
+                    Reader Macros
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.23.10" data-path="../reference/core-async.html">
+            
+                <a href="../reference/core-async.html">
+            
+                    
+                    Core.async
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.23.11" data-path="../reference/prasmatic-schema.html">
+            
+                <a href="../reference/prasmatic-schema.html">
+            
+                    
+                    Prasmatic Schema
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.23.12" data-path="../reference/books.html">
+            
+                <a href="../reference/books.html">
+            
+                    
+                    Books on Clojure
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.24" data-path="../lighttable/">
+            
+                <a href="../lighttable/">
+            
+                    
+                    Lighttable
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.24.1" data-path="../lighttable/configure-keyboard-mappings.html">
+            
+                <a href="../lighttable/configure-keyboard-mappings.html">
+            
+                    
+                    Configure Keyboard mappings
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >Profiles overview</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="profiles">Profiles</h1>
+<p>You can run your Clojure project with different profiles, establishing a different set of configuration options when run with Leiningen.</p>
+<p>Profiles can be created in one of the following places:</p>
+<table>
+<thead>
+<tr>
+<th>Profile name</th>
+<th>Filename</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Project</strong></td>
+<td><code>project.clj</code></td>
+<td>project specific profiles used by all developers on the project.</td>
+</tr>
+<tr>
+<td><strong>User</strong></td>
+<td><code>profiles.clj</code></td>
+<td>add or override individual configuration for the project, not typically shared as part of the project.</td>
+</tr>
+<tr>
+<td><strong>User-wide</strong></td>
+<td><code>~/.lein/profiles.clj</code></td>
+<td>common configuration a developer uses across all their Clojure projects.</td>
+</tr>
+</tbody>
+</table>
+<p>Profiles defined with the same name in any of the above files are either merged or over-written in the following order of precedence to form a single configuration map:</p>
+<p><img src="../images/clojure-leiningen-configuration-precedence.png" alt="Leiningen profiles - order of precedence"></p>
+<blockquote class="clearfix alert alert-danger"><strong class="fa fa-4x fa-bug"></strong>
+<p> refactor the rest of the text on profiles to just cover the essentials and link to the official documentation for further details.</p>
+<p>probably just need a few examples typically added to the different profile files</p>
+</blockquote>
+<h4 id="project-profiles">Project profiles</h4>
+<p>Define one or more profiles specific to the project.  Typically done to seperate configuration for different parts of the development lifecycle, eg. dev, test, production</p>
+<p>The example below adds a &quot;dummy-data&quot; resources directory during development and a dependency upon &quot;expectations&quot; that&apos;s only used for tests/development.</p>
+<pre><code class="lang-undefined">(defproject myproject &quot;0.5.0-SNAPSHOT&quot;
+  :description &quot;A project for doing things.&quot;
+  :dependencies [[org.clojure/clojure &quot;1.4.0&quot;]]
+  :profiles {:dev {:resource-paths [&quot;dummy-data&quot;]
+                   :dependencies [[expectations &quot;1.4.41&quot;]]}})
+</code></pre>
+<p>Use the <code>lein show-profiles</code> task to list the project&apos;s profiles.</p>
+<h4 id="user-profiles">User profiles</h4>
+<p>User specific configuration</p>
+<p>Create / edit the file <code>profiles.clj</code> in the root of the specific Clojure project (the same directory as <code>project.clj</code>)</p>
+<p>Use the <code>lein show-profiles</code> task to list the project&apos;s profiles.</p>
+<h4 id="user-wide-profiles">User-wide profiles</h4>
+<p>Add  have common configuration you want in all your Clojure projects without having to modify the <code>project.clj</code> file each time.</p>
+<p>Create / edit the file <code>~/.lein/profiles.clj</code></p>
+<p>Typical things are added to your profile include</p>
+<ul>
+<li>common development tools (lein-ancient, <a href="https://github.com/technomancy/slamhound" _target="blank">slamhound</a>, etc)</li>
+<li>additional directories on the classpath (ie. classes used during testing that are not in any jar file yet)</li>
+</ul>
+<h4 id="declaring-profiles">Declaring Profiles</h4>
+<p>Profiles specified in <code>~/.lein/profiles.clj</code> override profiles in a specific project configuration file, <code>project.clj</code>.</p>
+<p>Override project configuration without having to change the project.clj file or adding those changes to version control.</p>
+<p>User-wide profiles can also be specified in ~/.lein/profiles.clj. These will be available in all projects managed by Leiningen, though those profiles will be overridden by profiles of the same name specified in the project. System-wide profiles can be placed in /etc/leiningen/profiles.clj. They are treated the same as user profiles, but with lower precedence.</p>
+<p>You can also define user-wide profiles within clj-files inside ~/.lein/profiles.d. The semantics within such files differ slightly from other profile files: rather than a map of maps, the profile map is the top-level within the file, and the name of the profile comes from the file itself (without the .clj part). Defining the same user-wide profile in both ~/.lein/profiles.clj and in ~/.lein/profiles.d is considered an error.</p>
+<h4 id="default-profiles">Default Profiles</h4>
+<p>Certain profiles are active by default unless you specify another set of profiles using the with-profiles task. Each of the default profiles have different semantics:</p>
+<p>If you want to access dependencies or plugins during development time for any project place them in your :user profile. Your <code>~/.lein/profiles.clj</code> file could look something like this:</p>
+<pre><code class="lang-clojure">{<span class="hljs-symbol">:user</span> {<span class="hljs-symbol">:plugins</span> [[lein-pprint <span class="hljs-string">&quot;1.1.1&quot;</span>]]
+        <span class="hljs-symbol">:dependencies</span> [[slamhound <span class="hljs-string">&quot;1.3.1&quot;</span>]]}}
+</code></pre>
+<p>The :dev profile is used to specify project specific development tooling. Put things here if they are required for builds or tests, rather than just convenience tooling.</p>
+<p>The :user profile is separate from :dev; the latter is intended to be specified in the project itself. In order to avoid collisions, the project should never define a :user profile, nor should a user-wide :dev profile be defined. Likewise, system profiles should use the :system profile, and define neither :user nor :dev profiles.</p>
+<p>The :system profile is similar to :user, except it applies system-wide instead of merely to a single user.</p>
+<p>The :base profile provides dependencies necessary for basic repl functionality, adds dev-resources to the :resources-path, and sets defaults for :jvm-opts, :checkout-deps-share and :test-selectors. It is part of Leiningen itself; you shouldn&apos;t need to change it.</p>
+<p>The profiles listed above are active during development, but they are unmerged before the jar and pom files are created, making them invisible to code that depends upon your project.</p>
+<p>The :provided profile is used to specify dependencies that should be available during jar creation, but not propagated to other code that depends on your project. These are dependencies that the project assumes will be provided by whatever environment the jar is used in, but are needed during the development of the project. This is often used for frameworks like Hadoop that provide their own copies of certain libraries.</p>
+<p>The :default profile specifies the profiles that are active by default when running lein tasks. If not overridden, this is set to :leiningen/default, which is a composite profile with [:base :system :user :provided :dev].</p>
+<h4 id="task-specific-profiles">Task Specific Profiles</h4>
+<p>Some tasks automatically merge a profile if specified. Examples of these are the <code>:test</code> profile, when running the test task, and the <code>:repl</code> profile, when running the repl task.</p>
+<h4 id="profile-metadata">Profile Metadata</h4>
+<p>If you mark your profile with ^:leaky metadata, then the profile will not be stripped out when the pom and jar files are created.</p>
+<p>If you mark a profile with ^{:pom-scope :test} metadata, then the profile&apos;s :dependencies will be added with a test scope in the generated pom and jar when active. The :dev, :test, and :base profiles have this set automatically.</p>
+<p>If you mark a profile with ^{:pom-scope :provided} metadata, then the profile&apos;s :dependencies will be added with a provided scope in the generated pom and jar when active. The :provided profile has this set automatically.</p>
+<h4 id="merging">Merging</h4>
+<p>Profiles are merged by taking each key in the project map or profile map, combining the value if it&apos;s a collection and replacing it if it&apos;s not. Profiles specified later take precedence when replacing, just like the clojure.core/merge function. The dev profile takes precedence over user by default. Maps are merged recursively, sets are combined with clojure.set/union, and lists/vectors are concatenated. You can add hints via metadata that a given value should take precedence (:replace) or defer to values from a different profile (:displace) if you want to override this logic:</p>
+<pre><code class="lang-clojure">{<span class="hljs-symbol">:profiles</span> {<span class="hljs-symbol">:dev</span> {<span class="hljs-symbol">:prep-tasks</span> ^<span class="hljs-symbol">:replace</span> [<span class="hljs-string">&quot;clean&quot;</span> <span class="hljs-string">&quot;compile&quot;</span>]
+                  <span class="hljs-symbol">:aliases</span> ^<span class="hljs-symbol">:displace</span> {<span class="hljs-string">&quot;launch&quot;</span> <span class="hljs-string">&quot;run&quot;</span>}}}}
+</code></pre>
+<p>The exception to this merge logic is that :plugins and :dependencies have custom de-duplication logic since they must be specified as vectors even though they behave like maps (because it only makes sense to have a single version of a given dependency present at once). The replace/displace metadata hints still apply though.</p>
+<p>Remember that if a profile with the same name is specified in multiple locations, only the profile with the highest &quot;priority&quot; is picked &#x2013; no merging is done. The &quot;priority&quot; is &#x2013; from highest to lowest &#x2013; project.clj, profiles.clj, user-wide profiles, and finally system-wide profiles.</p>
+<p>If you need to enable personal overrides of parts of a profile, you can use a composite profile with common and personal parts - something like :dev [:dev-common :dev-overrides]; you would then have just :dev-overrides {} in project.clj and override it in profiles.clj.</p>
+<p>Another use of profiles is to test against various sets of dependencies:</p>
+<pre><code class="lang-clojure">(<span class="hljs-name">defproject</span> swank-clojure <span class="hljs-string">&quot;1.5.0-SNAPSHOT&quot;</span>
+  <span class="hljs-symbol">:description</span> <span class="hljs-string">&quot;Swank server connecting Clojure to Emacs SLIME&quot;</span>
+  <span class="hljs-symbol">:dependencies</span> [[org.clojure/clojure <span class="hljs-string">&quot;1.2.1&quot;</span>]
+                 [clj-stacktrace <span class="hljs-string">&quot;0.2.4&quot;</span>]
+                 [cdt <span class="hljs-string">&quot;1.2.6.2&quot;</span>]]
+  <span class="hljs-symbol">:profiles</span> {:<span class="hljs-number">1.3</span> {<span class="hljs-symbol">:dependencies</span> [[org.clojure/clojure <span class="hljs-string">&quot;1.3.0&quot;</span>]]}
+             :<span class="hljs-number">1.4</span> {<span class="hljs-symbol">:dependencies</span> [[org.clojure/clojure <span class="hljs-string">&quot;1.4.0-beta1&quot;</span>]]}})
+</code></pre>
+<h4 id="activating-profiles">Activating Profiles</h4>
+<p>To activate a different set of profiles for a given task, use the with-profile higher-order task:</p>
+<pre><code class="lang-undefined">$ lein with-profile 1.3 test :database
+</code></pre>
+<p>Multiple profiles may be combined with commas:</p>
+<pre><code class="lang-undefined">$ lein with-profile qa,user test :database
+</code></pre>
+<p>Multiple profiles may be executed in series with colons:</p>
+<pre><code class="lang-undefined">$ lein with-profile 1.3:1.4 test :database
+</code></pre>
+<p>The above invocations activate the given profiles in place of the defaults. To activate a profile in addition to the defaults, prepend it with a <code>+</code>:</p>
+<pre><code class="lang-undefined">$ lein with-profile +server run
+</code></pre>
+<p>You can also use - to deactivate a profile.</p>
+<p>By default all profiles will share the same :target-path, which can cause problems if settings from one profile leak over into another. It&apos;s recommended to set :target-path to &quot;target/%s&quot;, which will isolate each profile set and prevent anything from bleeding over.</p>
+<h4 id="composite-profiles">Composite Profiles</h4>
+<p>Sometimes it is useful to define a profile as a combination of other profiles. To do this, just use a vector instead of a map as the profile value. This can be used to avoid duplication:</p>
+<pre><code class="lang-clojure">{<span class="hljs-symbol">:shared</span> {<span class="hljs-symbol">:port</span> <span class="hljs-number">9229</span>, <span class="hljs-symbol">:protocol</span> <span class="hljs-string">&quot;https&quot;</span>}
+ <span class="hljs-symbol">:qa</span> [<span class="hljs-symbol">:shared</span> {<span class="hljs-symbol">:servers</span> [<span class="hljs-string">&quot;qa.mycorp.com&quot;</span>]}]
+ <span class="hljs-symbol">:stage</span> [<span class="hljs-symbol">:shared</span> {<span class="hljs-symbol">:servers</span> [<span class="hljs-string">&quot;stage.mycorp.com&quot;</span>]}]
+ <span class="hljs-symbol">:production</span> [<span class="hljs-symbol">:shared</span> {<span class="hljs-symbol">:servers</span> [<span class="hljs-string">&quot;prod1.mycorp.com&quot;</span>, <span class="hljs-string">&quot;prod1.mycorp.com&quot;</span>]}]}
+</code></pre>
+<h4 id="dynamic-eval">Dynamic Eval</h4>
+<p>Often you want to read an environment variable or execute a function to capture a value to use in your profiles. In order to do such a thing with the profiles.clj you&apos;ll need to use the read-eval syntax.</p>
+<p>Here is an example of such a case:</p>
+<pre><code class="lang-clojure">{<span class="hljs-symbol">:user</span> {<span class="hljs-symbol">:compile-path</span>  #=(<span class="hljs-name"><span class="hljs-builtin-name">eval</span></span> (<span class="hljs-name">System/getenv</span> <span class="hljs-string">&quot;ci.compile-path&quot;</span>)),
+        <span class="hljs-symbol">:target-path</span> #=(<span class="hljs-name"><span class="hljs-builtin-name">eval</span></span> (<span class="hljs-name">System/getenv</span> <span class="hljs-string">&quot;ci.target-path&quot;</span>))}}
+</code></pre>
+<h4 id="debugging">Debugging</h4>
+<p>To see how a given profile affects your project map, use the <a href="https://clojars.org/lein-pprint" _target="blank">lein-pprint</a> plugin:</p>
+<pre><code class="lang-bash">$ lein with-profile 1.4 pprint
+{:compile-path <span class="hljs-string">&quot;/home/phil/src/leiningen/lein-pprint/classes&quot;</span>,
+ :group <span class="hljs-string">&quot;lein-pprint&quot;</span>,
+ :<span class="hljs-built_in">source</span>-path (<span class="hljs-string">&quot;/home/phil/src/leiningen/lein-pprint/src&quot;</span>),
+ :dependencies
+ ([org.clojure/tools.nrepl <span class="hljs-string">&quot;0.0.5&quot;</span> :exclusions [org.clojure/clojure]]
+  [clojure-complete <span class="hljs-string">&quot;0.1.4&quot;</span> :exclusions [org.clojure/clojure]]
+  [org.thnetos/<span class="hljs-built_in">cd</span>-client <span class="hljs-string">&quot;0.3.3&quot;</span> :exclusions [org.clojure/clojure]]),
+ :target-path <span class="hljs-string">&quot;/home/phil/src/leiningen/lein-pprint/target&quot;</span>,
+ :name <span class="hljs-string">&quot;lein-pprint&quot;</span>,
+ [...]
+ :description <span class="hljs-string">&quot;Pretty-print a representation of the project map.&quot;</span>}
+</code></pre>
+<p>In order to prevent profile settings from being propagated to other projects that depend upon yours, the :default profiles are removed from your project when generating the pom, jar, and uberjar, and an :uberjar profile, if present, is included when creating uberjars. (This can be useful if you want to specify a :main namespace for uberjar use without triggering AOT during regular development.) Profiles activated through an explicit with-profile invocation will be preserved.</p>
+<h4 id="production">Production</h4>
+<p>Leiningen 2.1.0 onward get a speed boost by disabling optimized compilation (which only benefits long-running processes). This can negatively affect performance in the long run, or lead to inaccurate benchmarking results. If want the JVM to fully optimize, you can you can switch profiles with <code>lein with-profiles production run</code></p>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="run-the-repl.html" class="navigation navigation-prev " aria-label="Previous page: Run the REPL">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="adding-a-dev-profile.html" class="navigation navigation-next " aria-label="Next page: Adding a dev profile">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"Profiles overview","level":"1.19.3","depth":2,"next":{"title":"Adding a dev profile","level":"1.19.4","depth":2,"path":"leiningen/adding-a-dev-profile.md","ref":"leiningen/adding-a-dev-profile.md","articles":[]},"previous":{"title":"Run the REPL","level":"1.19.2","depth":2,"path":"leiningen/run-the-repl.md","ref":"leiningen/run-the-repl.md","articles":[]},"dir":"ltr"},"config":{"plugins":["toggle-chapters","codeblock-disable-glossary","richquotes","disqus","exercises","quizzes","ga","toolbar","sectionx"],"styles":{"website":"styles/website.css","ebook":"styles/ebook.css","pdf":"styles/pdf.css","mobi":"styles/mobi.css","epub":"styles/epub.css"},"pluginsConfig":{"disqus":{"shortName":"clojure-practicalli","useIdentifier":false},"search":{},"lunr":{"maxIndexSize":1000000},"codeblock-disable-glossary":{},"fontsettings":{"theme":"white","family":"sans","size":2},"quizzes":{},"richquotes":{"todos":true},"sectionx":{},"highlight":{},"ga":{"token":"UA-28030709-7","configuration":"auto"},"exercises":{},"toolbar":{"buttons":[{"label":"Gitter Chat","icon":"fa fa-comments-o","url":"https://gitter.im/practicalli/chat?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge"},{"label":"GitHub","icon":"fa fa-github","url":"https://github.com/practicalli"},{"label":"Search page title on StackOverflow","icon":"fa fa-stack-overflow","url":"http://stackoverflow.com/search?q={{title}}"}]},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"toggle-chapters":{}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"Clojure, Practicalli","gitbook":">=2.0.0"},"file":{"path":"leiningen/profile.md","mtime":"2016-06-07T09:54:46.725Z","type":"markdown"},"gitbook":{"version":"3.0.3","time":"2016-06-10T16:27:57.111Z"},"basePath":"..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../gitbook/gitbook-plugin-exercises/jsrepl/jsrepl.js" id="jsrepl-script"></script>
+    
+    <script src="../gitbook/gitbook.js"></script>
+    <script src="../gitbook/theme.js"></script>
+    
+        
+        <script src="../gitbook/gitbook-plugin-toggle-chapters/toggle.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-codeblock-disable-glossary/disable-glossary.js"></script>
+        
+    
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/URI.js/1.16.1/URI.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-disqus/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-exercises/ace/ace.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-exercises/ace/theme-tomorrow.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-exercises/ace/mode-javascript.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-exercises/exercises.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-quizzes/quizzes.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-ga/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-toolbar/buttons.js"></script>
+        
+    
+        
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-sectionx/sectionx.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-fontsettings/buttons.js"></script>
+        
+    
+
+
+    </body>
+</html>
+

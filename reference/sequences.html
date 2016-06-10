@@ -1,0 +1,2459 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <title>Sequences · Clojure, Practicalli</title>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.0.3">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-toggle-chapters/toggle.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-richquotes/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-disqus/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-exercises/exercises.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-quizzes/quizzes.css">
+                
+            
+                
+                <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-sectionx/sectionx.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+        <link rel="stylesheet" href="../styles/website.css">
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="control-flow.html" />
+    
+    
+    <link rel="prev" href="functions.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    Introduction
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="../using-the-workshop/">
+            
+                <a href="../using-the-workshop/">
+            
+                    
+                    How to use the workshop
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.1" data-path="../using-the-workshop/requirements.html">
+            
+                <a href="../using-the-workshop/requirements.html">
+            
+                    
+                    Technical Requirements
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2" data-path="../using-the-workshop/code-examples.html">
+            
+                <a href="../using-the-workshop/code-examples.html">
+            
+                    
+                    Code Examples
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="../development-environments/">
+            
+                <a href="../development-environments/">
+            
+                    
+                    Development Environments
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1" data-path="../development-environments/java.html">
+            
+                <a href="../development-environments/java.html">
+            
+                    
+                    Java
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2" data-path="../development-environments/leiningen.html">
+            
+                <a href="../development-environments/leiningen.html">
+            
+                    
+                    Leiningen
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3" data-path="../development-environments/lighttable.html">
+            
+                <a href="../development-environments/lighttable.html">
+            
+                    
+                    LightTable
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.4" data-path="../development-environments/other-tools.html">
+            
+                <a href="../development-environments/other-tools.html">
+            
+                    
+                    Other tools
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="../overview/">
+            
+                <a href="../overview/">
+            
+                    
+                    Overview of Clojure
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.1" data-path="../overview/purpose.html">
+            
+                <a href="../overview/purpose.html">
+            
+                    
+                    When to use Clojure
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.2" data-path="../overview/who-uses-clojure.html">
+            
+                <a href="../overview/who-uses-clojure.html">
+            
+                    
+                    Who uses Clojure
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.3" data-path="../overview/syntax.html">
+            
+                <a href="../overview/syntax.html">
+            
+                    
+                    The syntax
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.4" data-path="../overview/design.html">
+            
+                <a href="../overview/design.html">
+            
+                    
+                    Design
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.5" data-path="../overview/repl.html">
+            
+                <a href="../overview/repl.html">
+            
+                    
+                    Read, Evaluate, Print Loop (REPL)
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.6" data-path="../overview/all-bytecode-in-the-end.html">
+            
+                <a href="../overview/all-bytecode-in-the-end.html">
+            
+                    
+                    All bytecode in the end
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.7" data-path="../overview/features.html">
+            
+                <a href="../overview/features.html">
+            
+                    
+                    Features in more depth
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="../basic-clojure/">
+            
+                <a href="../basic-clojure/">
+            
+                    
+                    Some Basic Clojure
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.5.1" data-path="../basic-clojure/whats-my-environment.html">
+            
+                <a href="../basic-clojure/whats-my-environment.html">
+            
+                    
+                    Whats my environment
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.2" data-path="../basic-clojure/reading-project-file.html">
+            
+                <a href="../basic-clojure/reading-project-file.html">
+            
+                    
+                    Reading project file
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.3" data-path="../basic-clojure/threading-syntactic-sugar.html">
+            
+                <a href="../basic-clojure/threading-syntactic-sugar.html">
+            
+                    
+                    Threading syntactic sugar
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.4" data-path="../basic-clojure/show-me-the-docs.html">
+            
+                <a href="../basic-clojure/show-me-the-docs.html">
+            
+                    
+                    Show me the docs
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.5" data-path="../basic-clojure/java-interop.html">
+            
+                <a href="../basic-clojure/java-interop.html">
+            
+                    
+                    Java Interoperability
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.6" data-path="../basic-clojure/more-java-fun.html">
+            
+                <a href="../basic-clojure/more-java-fun.html">
+            
+                    
+                    More Java fun
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.7" data-path="../basic-clojure/quick-look-at-types.html">
+            
+                <a href="../basic-clojure/quick-look-at-types.html">
+            
+                    
+                    Quick look at Types
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.8" data-path="../basic-clojure/strings.html">
+            
+                <a href="../basic-clojure/strings.html">
+            
+                    
+                    Strings
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.9" data-path="../basic-clojure/numbers-maths.html">
+            
+                <a href="../basic-clojure/numbers-maths.html">
+            
+                    
+                    Numbers & Maths
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.10" data-path="../basic-clojure/ratios.html">
+            
+                <a href="../basic-clojure/ratios.html">
+            
+                    
+                    Ratios
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.11" data-path="../basic-clojure/assigning-names.html">
+            
+                <a href="../basic-clojure/assigning-names.html">
+            
+                    
+                    Assigning Names
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.12" data-path="../basic-clojure/defining-functions.html">
+            
+                <a href="../basic-clojure/defining-functions.html">
+            
+                    
+                    Defining Functions
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.13" data-path="../basic-clojure/namespace.html">
+            
+                <a href="../basic-clojure/namespace.html">
+            
+                    
+                    Namespace
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.14" data-path="../basic-clojure/control-flow.html">
+            
+                <a href="../basic-clojure/control-flow.html">
+            
+                    
+                    Control flow
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" data-path="../data-structures/">
+            
+                <a href="../data-structures/">
+            
+                    
+                    Data structures
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.6.1" data-path="../data-structures/list.html">
+            
+                <a href="../data-structures/list.html">
+            
+                    
+                    List
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.2" data-path="../data-structures/map.html">
+            
+                <a href="../data-structures/map.html">
+            
+                    
+                    Map
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.3" data-path="../data-structures/vector.html">
+            
+                <a href="../data-structures/vector.html">
+            
+                    
+                    Vector
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.4" data-path="../data-structures/set.html">
+            
+                <a href="../data-structures/set.html">
+            
+                    
+                    Set
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7" data-path="../using-data-structures/">
+            
+                <a href="../using-data-structures/">
+            
+                    
+                    Using data structures
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.7.1" data-path="../using-data-structures/applying-functions.html">
+            
+                <a href="../using-data-structures/applying-functions.html">
+            
+                    
+                    Applying functions
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.2" data-path="../using-data-structures/mapping-data-structures.html">
+            
+                <a href="../using-data-structures/mapping-data-structures.html">
+            
+                    
+                    Mapping functions
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8" data-path="../modifying-data-structures/">
+            
+                <a href="../modifying-data-structures/">
+            
+                    
+                    Modifying data structures
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.8.1" data-path="../modifying-data-structures/lists.html">
+            
+                <a href="../modifying-data-structures/lists.html">
+            
+                    
+                    Lists
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.2" data-path="../modifying-data-structures/maps.html">
+            
+                <a href="../modifying-data-structures/maps.html">
+            
+                    
+                    Maps
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.3" data-path="../modifying-data-structures/vectors.html">
+            
+                <a href="../modifying-data-structures/vectors.html">
+            
+                    
+                    Vectors
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.4" data-path="../modifying-data-structures/sets.html">
+            
+                <a href="../modifying-data-structures/sets.html">
+            
+                    
+                    Sets
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9" data-path="../defining-behaviour-with-functions/">
+            
+                <a href="../defining-behaviour-with-functions/">
+            
+                    
+                    Defing behaviour with Functions
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.9.1" data-path="../defining-behaviour-with-functions/syntax.html">
+            
+                <a href="../defining-behaviour-with-functions/syntax.html">
+            
+                    
+                    Syntax
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.2" data-path="../defining-behaviour-with-functions/calling-functions.html">
+            
+                <a href="../defining-behaviour-with-functions/calling-functions.html">
+            
+                    
+                    Calling functions
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.3" data-path="../defining-behaviour-with-functions/examples.html">
+            
+                <a href="../defining-behaviour-with-functions/examples.html">
+            
+                    
+                    Examples
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.4" data-path="../defining-behaviour-with-functions/parameters.html">
+            
+                <a href="../defining-behaviour-with-functions/parameters.html">
+            
+                    
+                    Parameters
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.5" data-path="../defining-behaviour-with-functions/using-functions-over-data-structures.html">
+            
+                <a href="../defining-behaviour-with-functions/using-functions-over-data-structures.html">
+            
+                    
+                    Using Functions over data structures
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10" data-path="../defining-functions/">
+            
+                <a href="../defining-functions/">
+            
+                    
+                    Defining fuctions
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.10.1" data-path="../defining-functions/let-local-values.html">
+            
+                <a href="../defining-functions/let-local-values.html">
+            
+                    
+                    let local values
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11" data-path="../control-flow/">
+            
+                <a href="../control-flow/">
+            
+                    
+                    Control flow
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.11.1" data-path="../control-flow/if.html">
+            
+                <a href="../control-flow/if.html">
+            
+                    
+                    if
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11.2" data-path="../control-flow/cond.html">
+            
+                <a href="../control-flow/cond.html">
+            
+                    
+                    cond
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11.3" data-path="../control-flow/when.html">
+            
+                <a href="../control-flow/when.html">
+            
+                    
+                    when
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12" data-path="../local-assignement/">
+            
+                <a href="../local-assignement/">
+            
+                    
+                    Local Assignment
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.13" data-path="../simple-project/">
+            
+                <a href="../simple-project/">
+            
+                    
+                    Simple project
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.13.1" data-path="../simple-project/create-project.html">
+            
+                <a href="../simple-project/create-project.html">
+            
+                    
+                    Create a project
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.13.2" data-path="../simple-project/run-the-repl.html">
+            
+                <a href="../simple-project/run-the-repl.html">
+            
+                    
+                    Run the REPL
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.14" data-path="../what-is-functional-programming/">
+            
+                <a href="../what-is-functional-programming/">
+            
+                    
+                    What is Functional Programming
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.15" data-path="../thinking-functionally/">
+            
+                <a href="../thinking-functionally/">
+            
+                    
+                    Thinking Functionally
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.15.1" data-path="../thinking-functionally/side-effects.html">
+            
+                <a href="../thinking-functionally/side-effects.html">
+            
+                    
+                    Side effects
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.15.2" data-path="../thinking-functionally/pure-functions.html">
+            
+                <a href="../thinking-functionally/pure-functions.html">
+            
+                    
+                    Pure functions
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.15.3" data-path="../thinking-functionally/impure-functions.html">
+            
+                <a href="../thinking-functionally/impure-functions.html">
+            
+                    
+                    Impure functions
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.15.4" data-path="../thinking-functionally/first-class-functions.html">
+            
+                <a href="../thinking-functionally/first-class-functions.html">
+            
+                    
+                    First Class functions
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.15.5" data-path="../thinking-functionally/homoiconicity.html">
+            
+                <a href="../thinking-functionally/homoiconicity.html">
+            
+                    
+                    Homoiconicity
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.15.6" data-path="../thinking-functionally/higher-order-functions.html">
+            
+                <a href="../thinking-functionally/higher-order-functions.html">
+            
+                    
+                    Higher Order functions
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.15.7" data-path="../thinking-functionally/chaining-functions.html">
+            
+                <a href="../thinking-functionally/chaining-functions.html">
+            
+                    
+                    Chaining functions
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.15.7.1" data-path="../thinking-functionally/threading-macros.html">
+            
+                <a href="../thinking-functionally/threading-macros.html">
+            
+                    
+                    Threading macros
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.15.7.2" data-path="../thinking-functionally/example-hitchhikers-guide.html">
+            
+                <a href="../thinking-functionally/example-hitchhikers-guide.html">
+            
+                    
+                    Example: Hitchhikers Guide
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.15.8" data-path="../thinking-functionally/immutable.html">
+            
+                <a href="../thinking-functionally/immutable.html">
+            
+                    
+                    Immutability
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.15.8.1" data-path="../thinking-functionally/copying-collections.html">
+            
+                <a href="../thinking-functionally/copying-collections.html">
+            
+                    
+                    Copying collections
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.15.8.2" data-path="../thinking-functionally/persistent-data-structures.html">
+            
+                <a href="../thinking-functionally/persistent-data-structures.html">
+            
+                    
+                    Persistent data structures
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.15.9" data-path="../thinking-functionally/list-comprehension.html">
+            
+                <a href="../thinking-functionally/list-comprehension.html">
+            
+                    
+                    List Comprehension
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.15.10" data-path="../thinking-functionally/lazy-evaluation.html">
+            
+                <a href="../thinking-functionally/lazy-evaluation.html">
+            
+                    
+                    Lazy Evaluation
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.15.11" data-path="../thinking-functionally/sequences.html">
+            
+                <a href="../thinking-functionally/sequences.html">
+            
+                    
+                    Sequences
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.15.12" data-path="../thinking-functionally/sequence-abstractions.html">
+            
+                <a href="../thinking-functionally/sequence-abstractions.html">
+            
+                    
+                    Sequence-abstraction
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.15.13" data-path="../thinking-functionally/functors.html">
+            
+                <a href="../thinking-functionally/functors.html">
+            
+                    
+                    Functors
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.15.14" data-path="../thinking-functionally/arity.html">
+            
+                <a href="../thinking-functionally/arity.html">
+            
+                    
+                    Arity
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.15.15" data-path="../thinking-functionally/pattern-matching.html">
+            
+                <a href="../thinking-functionally/pattern-matching.html">
+            
+                    
+                    Pattern matching
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.15.16" data-path="../thinking-functionally/polymorphism.html">
+            
+                <a href="../thinking-functionally/polymorphism.html">
+            
+                    
+                    Polymorphism
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.15.17" data-path="../thinking-functionally/recursion.html">
+            
+                <a href="../thinking-functionally/recursion.html">
+            
+                    
+                    Recursion
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.15.18" data-path="../thinking-functionally/recursion-polymorphism.html">
+            
+                <a href="../thinking-functionally/recursion-polymorphism.html">
+            
+                    
+                    Recursion & Polymorphism
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.15.19" data-path="../thinking-functionally/tail-recursion.html">
+            
+                <a href="../thinking-functionally/tail-recursion.html">
+            
+                    
+                    Tail recursion
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.15.20" data-path="../thinking-functionally/partial-functions.html">
+            
+                <a href="../thinking-functionally/partial-functions.html">
+            
+                    
+                    Currying & Partial Functions
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.15.21" data-path="../thinking-functionally/anonymous-functions.html">
+            
+                <a href="../thinking-functionally/anonymous-functions.html">
+            
+                    
+                    Anonymous Functions
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.15.22" data-path="../thinking-functionally/naming.html">
+            
+                <a href="../thinking-functionally/naming.html">
+            
+                    
+                    Naming
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.15.22.1" data-path="../thinking-functionally/global-definitions.html">
+            
+                <a href="../thinking-functionally/global-definitions.html">
+            
+                    
+                    Global definitions
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.15.22.2" data-path="../thinking-functionally/local-bindings.html">
+            
+                <a href="../thinking-functionally/local-bindings.html">
+            
+                    
+                    Local Bindings
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.15.22.3" data-path="../thinking-functionally/private-functions.html">
+            
+                <a href="../thinking-functionally/private-functions.html">
+            
+                    
+                    Private functions
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.16" data-path="../thinking-functionally/managing-state-changes.html">
+            
+                <a href="../thinking-functionally/managing-state-changes.html">
+            
+                    
+                    Managing state changes
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.17" data-path="../libraries/">
+            
+                <a href="../libraries/">
+            
+                    
+                    Libraries
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.17.1" data-path="../libraries/clojars.html">
+            
+                <a href="../libraries/clojars.html">
+            
+                    
+                    Clojars
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.17.2" data-path="../libraries/om.html">
+            
+                <a href="../libraries/om.html">
+            
+                    
+                    om
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.17.3" data-path="../libraries/edn.html">
+            
+                <a href="../libraries/edn.html">
+            
+                    
+                    edn
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.18" data-path="../testing/">
+            
+                <a href="../testing/">
+            
+                    
+                    Testing
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.18.1" data-path="../testing/">
+            
+                <a href="../testing/">
+            
+                    
+                    Testing
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.18.2" data-path="../testing/">
+            
+                <a href="../testing/">
+            
+                    
+                    Testing
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.18.3" data-path="../testing/">
+            
+                <a href="../testing/">
+            
+                    
+                    Testing
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.19" data-path="../leiningen/">
+            
+                <a href="../leiningen/">
+            
+                    
+                    Leiningen Configuration
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.19.1" data-path="../leiningen/create-a-project.html">
+            
+                <a href="../leiningen/create-a-project.html">
+            
+                    
+                    Create a project
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.19.2" data-path="../leiningen/run-the-repl.html">
+            
+                <a href="../leiningen/run-the-repl.html">
+            
+                    
+                    Run the REPL
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.19.3" data-path="../leiningen/profile.html">
+            
+                <a href="../leiningen/profile.html">
+            
+                    
+                    Profiles overview
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.19.4" data-path="../leiningen/adding-a-dev-profile.html">
+            
+                <a href="../leiningen/adding-a-dev-profile.html">
+            
+                    
+                    Adding a dev profile
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.19.5" data-path="../leiningen/templates.html">
+            
+                <a href="../leiningen/templates.html">
+            
+                    
+                    Templates
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.19.6" data-path="../leiningen/create-a-template.html">
+            
+                <a href="../leiningen/create-a-template.html">
+            
+                    
+                    Create a template
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.19.7" data-path="../leiningen/plugins.html">
+            
+                <a href="../leiningen/plugins.html">
+            
+                    
+                    Plugins
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.20" data-path="../explaining-macros.html">
+            
+                <a href="../explaining-macros.html">
+            
+                    
+                    Explaining Macros
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.21" data-path="../work-in-progress.html">
+            
+                <a href="../work-in-progress.html">
+            
+                    
+                    Work in Progress
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.22" data-path="../where-next.html">
+            
+                <a href="../where-next.html">
+            
+                    
+                    Where next
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.23" data-path="./">
+            
+                <a href="./">
+            
+                    
+                    Reference
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.23.1" data-path="basic-syntax.html">
+            
+                <a href="basic-syntax.html">
+            
+                    
+                    Basic Syntax
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.23.2" data-path="naming.html">
+            
+                <a href="naming.html">
+            
+                    
+                    Naming
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.23.3" data-path="naming-conventions.html">
+            
+                <a href="naming-conventions.html">
+            
+                    
+                    Naming Conventions
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.23.4" data-path="functions.html">
+            
+                <a href="functions.html">
+            
+                    
+                    Functions
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.23.5" data-path="sequences.html">
+            
+                <a href="sequences.html">
+            
+                    
+                    Sequences
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.23.6" data-path="control-flow.html">
+            
+                <a href="control-flow.html">
+            
+                    
+                    Control Flow
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.23.7" data-path="persistent-data-structures.html">
+            
+                <a href="persistent-data-structures.html">
+            
+                    
+                    Persistent Data Structures
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.23.8" data-path="changing-state.html">
+            
+                <a href="changing-state.html">
+            
+                    
+                    Changing State
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.23.9" data-path="reader-macros.html">
+            
+                <a href="reader-macros.html">
+            
+                    
+                    Reader Macros
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.23.10" data-path="core-async.html">
+            
+                <a href="core-async.html">
+            
+                    
+                    Core.async
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.23.11" data-path="prasmatic-schema.html">
+            
+                <a href="prasmatic-schema.html">
+            
+                    
+                    Prasmatic Schema
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.23.12" data-path="books.html">
+            
+                <a href="books.html">
+            
+                    
+                    Books on Clojure
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.24" data-path="../lighttable/">
+            
+                <a href="../lighttable/">
+            
+                    
+                    Lighttable
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.24.1" data-path="../lighttable/configure-keyboard-mappings.html">
+            
+                <a href="../lighttable/configure-keyboard-mappings.html">
+            
+                    
+                    Configure Keyboard mappings
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >Sequences</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="reference-clojure-from-the-ground-up-sequences">Reference: Clojure from the ground up: sequences</h1>
+<p>In Chapter 3, we discovered functions as a way to abstract expressions; to rephrase a particular computation with some parts missing. We used functions to transform a single value. But what if we want to apply a function to more than one value at once? What about sequences?</p>
+<p>For example, we know that (inc 2) increments the number 2. What if we wanted to increment every number in the vector [1 2 3], producing [2 3 4]?</p>
+<p>user=&gt; (inc [1 2 3])
+ClassCastException clojure.lang.PersistentVector cannot be cast to java.lang.Number  clojure.lang.Numbers.inc (Numbers.java:110)
+Clearly inc can only work on numbers, not on vectors. We need a different kind of tool.</p>
+<p>A direct approach
+Let&#x2019;s think about the problem in concrete terms. We want to increment each of three elements: the first, second, and third. We know how to get an element from a sequence by using nth, so let&#x2019;s start with the first number, at index 0:</p>
+<p>user=&gt; (def numbers [1 2 3])</p>
+<h1 id="usernumbers">&apos;user/numbers</h1>
+<p>user=&gt; (nth numbers 0)
+1
+user=&gt; (inc (nth numbers 0))
+2
+So there&#x2019;s the first element incremented. Now we can do the second:</p>
+<p>user=&gt; (inc (nth numbers 1))
+3
+user=&gt; (inc (nth numbers 2))
+4
+And it should be straightforward to combine these into a vector&#x2026;</p>
+<p>user=&gt; [(inc (nth numbers 0)) (inc (nth numbers 1)) (inc (nth numbers 2))]
+[2 3 4]
+Success! We&#x2019;ve incremented each of the numbers in the list! How about a list with only two elements?</p>
+<p>user=&gt; (def numbers [1 2])</p>
+<h1 id="usernumbers">&apos;user/numbers</h1>
+<p>user=&gt; [(inc (nth numbers 0)) (inc (nth numbers 1)) (inc (nth numbers 2))]</p>
+<p>IndexOutOfBoundsException   clojure.lang.PersistentVector.arrayFor (PersistentVector.java:107)
+Shoot. We tried to get the element at index 2, but couldn&#x2019;t, because numbers only has indices 0 and 1. Clojure calls that &#x201C;index out of bounds&#x201D;.</p>
+<p>We could just leave off the third expression in the vector; taking only elements 0 and 1. But the problem actually gets much worse, because we&#x2019;d need to make this change every time we wanted to use a different sized vector. And what of a vector with 1000 elements? We&#x2019;d need 1000 (inc (nth numbers ...)) expressions! Down this path lies madness.</p>
+<p>Let&#x2019;s back up a bit, and try a slightly smaller problem.</p>
+<p>Recursion
+What if we just incremented the first number in the vector? How would that work? We know that first finds the first element in a sequence, and rest finds all the remaining ones.</p>
+<p>user=&gt; (first [1 2 3])
+1
+user=&gt; (rest [1 2 3])
+(2 3)
+So there&#x2019;s the pieces we&#x2019;d need. To glue them back together, we can use a function called cons, which says &#x201C;make a list beginning with the first argument, followed by all the elements in the second argument&#x201D;.</p>
+<p>user=&gt; (cons 1 [2])
+(1 2)
+user=&gt; (cons 1 [2 3])
+(1 2 3)
+user=&gt; (cons 1 [2 3 4])
+(1 2 3 4)
+OK so we can split up a sequence, increment the first part, and join them back together. Not so hard, right?</p>
+<p>(defn inc-first [nums]
+  (cons (inc (first nums))
+        (rest nums)))
+user=&gt; (inc-first [1 2 3 4])
+(2 2 3 4)
+Hey, there we go! First element changed. Will it work with any length list?</p>
+<p>user=&gt; (inc-first [5])
+(6)
+user=&gt; (inc-first [])</p>
+<p>NullPointerException   clojure.lang.Numbers.ops (Numbers.java:942)
+Shoot. We can&#x2019;t increment the first element of this empty vector, because it doesn&#x2019;t have a first element.</p>
+<p>user=&gt; (first [])
+nil
+user=&gt; (inc nil)</p>
+<p>NullPointerException   clojure.lang.Numbers.ops (Numbers.java:942)
+So there are really two cases for this function. If there is a first element in nums, we&#x2019;ll increment it as normal. If there&#x2019;s no such element, we&#x2019;ll return an empty list. To express this kind of conditional behavior, we&#x2019;ll use a Clojure special form called if:</p>
+<h2 id="user-doc-if">user=&gt; (doc if)</h2>
+<p>if
+  (if test then else?)
+Special Form
+  Evaluates test. If not the singular values nil or false,
+  evaluates and yields then, otherwise, evaluates and yields else. If
+  else is not supplied it defaults to nil.</p>
+<p>Please see <a href="http://clojure.org/special_forms#if" _target="blank">http://clojure.org/special_forms#if</a>
+To confirm our intuition:</p>
+<p>user=&gt; (if true :a :b)
+:a
+user=&gt; (if false :a :b)
+:b
+Seems straightforward enough.</p>
+<p>(defn inc-first [nums]
+  (if (first nums)
+    ; If there&apos;s a first number, build a new list with cons
+    (cons (inc (first nums))
+          (rest nums))
+    ; If there&apos;s no first number, just return an empty list
+    (list)))</p>
+<p>user=&gt; (inc-first [])
+()
+user=&gt; (inc-first [1 2 3])
+(2 2 3)
+Success! Now we can handle both cases: empty sequences, and sequences with things in them. Now how about incrementing that second number? Let&#x2019;s stare at that code for a bit.</p>
+<p>(rest nums)
+Hang on. That list&#x2013;(rest nums)&#x2013;that&#x2019;s a list of numbers too. What if we&#x2026; used our inc-first function on that list, to increment its first number? Then we&#x2019;d have incremented both the first and the second element.</p>
+<p>(defn inc-more [nums]
+  (if (first nums)
+    (cons (inc (first nums))
+          (inc-more (rest nums)))
+    (list)))
+user=&gt; (inc-more [1 2 3 4])
+(2 3 4 5)
+Odd. That didn&#x2019;t just increment the first two numbers. It incremented all the numbers. We fell into the complete solution entirely by accident. What happened here?</p>
+<p>Well first we&#x2026; yes, we got the number one, and incremented it. Then we stuck that onto (inc-first [2 3 4]), which got two, and incremented it. Then we stuck that two onto (inc-first [3 4]), which got three, and then we did the same for four. Only that time around, at the very end of the list, (rest [4]) would have been empty. So when we went to get the first number of the empty list, we took the second branch of the if, and returned the empty list.</p>
+<p>Having reached the bottom of the function calls, so to speak, we zip back up the <a href="../GLOSSARY.html#chain" class="glossary-term" title="">chain</a>. We can imagine this function turning into a long string of cons calls, like so:</p>
+<p>(cons 2 (cons 3 (cons 4 (cons 5 &apos;()))))
+(cons 2 (cons 3 (cons 4 &apos;(5))))
+(cons 2 (cons 3 &apos;(4 5)))
+(cons 2 &apos;(3 4 5))
+&apos;(2 3 4 5)
+This technique is called recursion, and it is a fundamental principle in working with collections, sequences, trees, or graphs&#x2026; any problem which has small parts linked together. There are two key elements in a recursive program:</p>
+<p>Some part of the problem which has a known solution
+A relationship which connects one part of the problem to the next
+Incrementing the elements of an empty list returns the empty list. This is our base case: the ground to build on. Our inductive case, also called the recurrence relation, is how we broke the problem up into incrementing the first number in the sequence, and incrementing all the numbers in the rest of the sequence. The if expression bound these two cases together into a single function; a function defined in terms of itself.</p>
+<p>Once the initial step has been taken, every step can be taken.</p>
+<p>user=&gt; (inc-more [1 2 3 4 5 6 7 8 9 10 11 12])
+(2 3 4 5 6 7 8 9 10 11 12 13)
+This is the beauty of a recursive function; folding an unbounded stream of computation over and over, onto itself, until only a single step remains.</p>
+<p>Generalizing from inc
+We set out to increment every number in a vector, but nothing in our solution actually depended on inc. It just as well could have been dec, or str, or keyword. Let&#x2019;s parameterize our inc-more function to use any transformation of its elements:</p>
+<p>(defn transform-all [f xs]
+  (if (first xs)
+    (cons (f (first xs))
+          (transform-all f (rest xs)))
+    (list)))
+Because we could be talking about any kind of sequence, not just numbers, we&#x2019;ve named the sequence xs, and its first element x. We also take a function f as an argument, and that function will be applied to each x in turn. So not only can we increment numbers&#x2026;</p>
+<p>user=&gt; (transform-all inc [1 2 3 4])
+(2 3 4 5)
+&#x2026;but we can turn strings to keywords&#x2026;</p>
+<p>user=&gt; (transform-all keyword [&quot;bell&quot; &quot;hooks&quot;])
+(:bell :hooks)
+&#x2026;or wrap every element in a list:</p>
+<p>user=&gt; (transform-all list [:codex :book :manuscript])
+((:codex) (:book) (:manuscript))
+In short, this function expresses a sequence in which each element is some function applied to the corresponding element in the underlying sequence. This idea is so important that it has its own name, in mathematics, Clojure, and other languages. We call it map.</p>
+<p>user=&gt; (map inc [1 2 3 4])
+(2 3 4 5)
+You might remember maps as a datatype in Clojure, too&#x2013;they&#x2019;re dictionaries that relate keys to values.</p>
+<p>{:year  1969
+ :event &quot;moon landing&quot;}
+The function map relates one sequence to another. The type map relates keys to values. There is a deep symmetry between the two: maps are usually sparse, and the relationships between keys and values may be arbitrarily complex. The map function, on the other hand, usually expresses the same type of relationship, applied to a series of elements in fixed order.</p>
+<p>Building sequences
+Recursion can do more than just map. We can use it to expand a single value into a sequence of values, each related by some function. For instance:</p>
+<p>(defn expand [f x count]
+  (if (pos? count)
+    (cons x (expand f (f x) (dec count)))))
+Our base case is x itself, followed by the sequence beginning with (f x). That sequence in turn expands to (f (f x)), and then (f (f (f x))), and so on. Each time we call expand, we count down by one using dec. Once the count is zero, the if returns nil, and evaluation stops. If we start with the number 0 and use inc as our function:</p>
+<p>user=&gt; user=&gt; (expand inc 0 10)
+(0 1 2 3 4 5 6 7 8 9)
+Clojure has a more general form of this function, called iterate.</p>
+<p>user=&gt; (take 10 (iterate inc 0))
+(0 1 2 3 4 5 6 7 8 9)
+Since this sequence is infinitely long, we&#x2019;re using take to select only the first 10 elements. We can construct more complex sequences by using more complex functions:</p>
+<p>user=&gt; (take 10 (iterate (fn [x] (if (odd? x) (+ 1 x) (/ x 2))) 10))
+(10 5 6 3 4 2 1 2 1 2)
+Or build up strings:</p>
+<p>user=&gt; (take 5 (iterate (fn [x] (str x &quot;o&quot;)) &quot;y&quot;))
+(&quot;y&quot; &quot;yo&quot; &quot;yoo&quot; &quot;yooo&quot; &quot;yoooo&quot;)
+iterate is extremely handy for working with infinite sequences, and has some partners in crime. repeat, for instance, constructs a sequence where every element is the same.</p>
+<p>user=&gt; (take 10 (repeat :hi))
+(:hi :hi :hi :hi :hi :hi :hi :hi :hi :hi)
+user=&gt; (repeat 3 :echo)
+(:echo :echo :echo)
+And its close relative repeatedly simply calls a function (f) to generate an infinite sequence of values, over and over again, without any relationship between elements. For an infinite sequence of random numbers:</p>
+<p>user=&gt; (rand)
+0.9002678382322784
+user=&gt; (rand)
+0.12375594203332863
+user=&gt; (take 3 (repeatedly rand))
+(0.44442397843046755 0.33668691162169784 0.18244875487846746)
+Notice that calling (rand) returns a different number each time. We say that rand is an impure function, because it cannot simply be replaced by the same value every time. It does something different each time it&#x2019;s called.</p>
+<p>There&#x2019;s another very handy sequence function specifically for numbers: range, which generates a sequence of numbers between two points. (range n) gives n successive integers starting at 0. (range n m) returns integers from n to m-1. (range n m step) returns integers from n to m, but separated by step.</p>
+<p>user=&gt; (range 5)
+(0 1 2 3 4)
+user=&gt; (range 2 10)
+(2 3 4 5 6 7 8 9)
+user=&gt; (range 0 100 5)
+(0 5 10 15 20 25 30 35 40 45 50 55 60 65 70 75 80 85 90 95)
+To extend a sequence by repeating it forever, use cycle:</p>
+<p>user=&gt; (take 10 (cycle [1 2 3]))
+(1 2 3 1 2 3 1 2 3 1)
+Transforming sequences
+Given a sequence, we often want to find a related sequence. map, for instance, applies a function to each element&#x2013;but has a few more tricks up its sleeve.</p>
+<p>user=&gt; (map (fn [n vehicle] (str &quot;I&apos;ve got &quot; n &quot; &quot; vehicle &quot;s&quot;))
+         [0 200 9]
+         [&quot;car&quot; &quot;train&quot; &quot;kiteboard&quot;])
+(&quot;I&apos;ve got 0 cars&quot; &quot;I&apos;ve got 200 trains&quot; &quot;I&apos;ve got 9 kiteboards&quot;)
+If given multiple sequences, map calls its function with one element from each sequence in turn. So the first value will be (f 0 &quot;car&quot;), the second (f 200 &quot;train&quot;), and so on. Like a zipper, map folds together corresponding elements from multiple collections. To sum three vectors, column-wise:</p>
+<p>user=&gt; (map + [1 2 3]
+              [4 5 6]
+              [7 8 9])
+(12 15 18)
+If one sequence is bigger than another, map stops at the end of the smaller one. We can exploit this to combine finite and infinite sequences. For example, to number the elements in a vector:</p>
+<p>user=&gt; (map (fn [index element] (str index &quot;. &quot; element))
+            (iterate inc 0)
+            [&quot;erlang&quot; &quot;ruby&quot; &quot;haskell&quot;])
+(&quot;0. erlang&quot; &quot;1. ruby&quot; &quot;2. haskell&quot;)
+Transforming elements together with their indices is so common that Clojure has a special function for it: map-indexed:</p>
+<p>user=&gt; (map-indexed (fn [index element] (str index &quot;. &quot; element))
+                    [&quot;erlang&quot; &quot;ruby&quot; &quot;haskell&quot;])
+(&quot;0. erlang&quot; &quot;1. ruby&quot; &quot;2. haskell&quot;)
+You can also tack one sequence onto the end of another, like so:</p>
+<p>user=&gt; (concat [1 2 3] [:a :b :c] [4 5 6])
+(1 2 3 :a :b :c 4 5 6)
+Another way to combine two sequences is to riffle them together, using interleave.</p>
+<p>user=&gt; (interleave [:a :b :c] [1 2 3])
+(:a 1 :b 2 :c 3)
+And if you want to insert a specific element between each successive pair in a sequence, try interpose:</p>
+<p>user=&gt; (interpose :and [1 2 3 4])
+(1 :and 2 :and 3 :and 4)
+To reverse a sequence, use reverse.</p>
+<p>user=&gt; (reverse [1 2 3])
+(3 2 1)
+user=&gt; (reverse &quot;woolf&quot;)
+(\f \l \o \o \w)
+Strings are sequences too! Each element of a string is a character, written \f. You can rejoin those characters into a string with apply str:</p>
+<p>user=&gt; (apply str (reverse &quot;woolf&quot;))
+&quot;floow&quot;
+&#x2026;and break strings up into sequences of chars with seq.</p>
+<p>user=&gt; (seq &quot;sato&quot;)
+(\s \a \t \o)
+To randomize the order of a sequence, use shuffle.</p>
+<p>user=&gt; (shuffle [1 2 3 4])
+[3 1 2 4]
+user=&gt; (apply str (shuffle (seq &quot;abracadabra&quot;)))
+&quot;acaadabrrab&quot;
+Subsequences
+We&#x2019;ve already seen take, which selects the first n elements. There&#x2019;s also drop, which removes the first n elements.</p>
+<p>user=&gt; (range 10)
+(0 1 2 3 4 5 6 7 8 9)
+user=&gt; (take 3 (range 10))
+(0 1 2)
+user=&gt; (drop 3 (range 10))
+(3 4 5 6 7 8 9)
+And for slicing apart the other end of the sequence, we have take-last and drop-last:</p>
+<p>user=&gt; (take-last 3 (range 10))
+(7 8 9)
+user=&gt; (drop-last 3 (range 10))
+(0 1 2 3 4 5 6)
+take-while and drop-while work just like take and drop, but use a function to decide when to cut.</p>
+<p>user=&gt; (take-while pos? [3 2 1 0 -1 -2 10])
+(3 2 1)
+In general, one can cut a sequence in twain by using split-at, and giving it a particular index. There&#x2019;s also split-with, which uses a function to decide when to cut.</p>
+<p>(split-at 4 (range 10))
+[(0 1 2 3) (4 5 6 7 8 9)]
+user=&gt; (split-with number? [1 2 3 :mark 4 5 6 :mark 7])
+[(1 2 3) (:mark 4 5 6 :mark 7)]
+Notice that because indexes start at zero, sequence functions tend to have predictable numbers of elements. (split-at 4) yields four elements in the first collection, and ensures the second collection begins at index four. (range 10) has ten elements, corresponding to the first ten indices in a sequence. (range 3 5) has two (since 5 - 3 is two) elements. These choices simplify the definition of recursive functions as well.</p>
+<p>We can select particular elements from a sequence by applying a function. To find all positive numbers in a list, use filter:</p>
+<p>user=&gt; (filter pos? [1 5 -4 -7 3 0])
+(1 5 3)
+filter looks at each element in turn, and includes it in the resulting sequence only if (f element) returns a truthy value. Its complement is remove, which only includes those elements where (f element) is false or nil.</p>
+<p>user=&gt; (remove string? [1 &quot;turing&quot; :apple])
+(1 :apple)
+Finally, one can group a sequence into chunks using partition, partition-all, or partition-by. For instance, one might group alternating values into pairs:</p>
+<p>user=&gt; (partition 2 [:cats 5 :bats 27 :crocodiles 0])
+((:cats 5) (:bats 27) (:crocodiles 0))
+Or separate a series of numbers into negative and positive runs:</p>
+<p>(user=&gt; (partition-by neg? [1 2 3 2 1 -1 -2 -3 -2 -1 1 2])
+((1 2 3 2 1) (-1 -2 -3 -2 -1) (1 2))
+Collapsing sequences
+After transforming a sequence, we often want to collapse it in some way; to derive some smaller value. For instance, we might want the number of times each element appears in a sequence:</p>
+<p>user=&gt; (frequencies [:meow :mrrrow :meow :meow])
+{:meow 3, :mrrrow 1}
+Or to group elements by some function:</p>
+<p>user=&gt; (pprint (group-by :first [{:first &quot;Li&quot;    :last &quot;Zhou&quot;}
+                                 {:first &quot;Sarah&quot; :last &quot;Lee&quot;}
+                                 {:first &quot;Sarah&quot; :last &quot;Dunn&quot;}
+                                 {:first &quot;Li&quot;    :last &quot;O&apos;Toole&quot;}]))
+{&quot;Li&quot;    [{:last &quot;Zhou&quot;, :first &quot;Li&quot;}   {:last &quot;O&apos;Toole&quot;, :first &quot;Li&quot;}],
+ &quot;Sarah&quot; [{:last &quot;Lee&quot;, :first &quot;Sarah&quot;} {:last &quot;Dunn&quot;, :first &quot;Sarah&quot;}]}
+Here we&#x2019;ve taken a sequence of people with first and last names, and used the :first keyword (which can act as a function!) to look up those first names. group-by used that function to produce a map of first names to lists of people&#x2013;kind of like an index.</p>
+<p>In general, we want to combine elements together in some way, using a function. Where map treated each element independently, reducing a sequence requires that we bring some information along. The most general way to collapse a sequence is reduce.</p>
+<h2 id="user-doc-reduce">user=&gt; (doc reduce)</h2>
+<p>clojure.core/reduce
+([f coll] [f val coll])
+  f should be a function of 2 arguments. If val is not supplied,
+  returns the result of applying f to the first 2 items in coll, then
+  applying f to that result and the 3rd item, etc. If coll contains no
+  items, f must accept no arguments as well, and reduce returns the
+  result of calling f with no arguments.  If coll has only 1 item, it
+  is returned and f is not called.  If val is supplied, returns the
+  result of applying f to val and the first item in coll, then
+  applying f to that result and the 2nd item, etc. If coll contains no
+  items, returns val and f is not called.
+That&#x2019;s a little complicated, so we&#x2019;ll start small. We need a function, f, which combines successive elements of the sequence. (f state element) will return the state for the next invocation of f. As f moves along the sequence, it carries some changing state with it. The final state is the return value of reduce.</p>
+<p>user=&gt; (reduce + [1 2 3 4])
+10
+reduce begins by calling (+ 1 2), which yields the state 3. Then it calls (+ 3 3), which yields 6. Then (+ 6 4), which returns 10. We&#x2019;ve taken a function over two elements, and used it to combine all the elements. Mathematically, we could write:</p>
+<p>1 + 2 + 3 + 4
+    3 + 3 + 4
+        6 + 4
+           10
+So another way to look at reduce is like sticking a function between each pair of elements. To see the reducing process in action, we can use reductions, which returns a sequence of all the intermediate states.</p>
+<p>user=&gt; (reductions + [1 2 3 4])
+(1 3 6 10)
+Oftentimes we include a default state to start with. For instance, we could start with an empty set, and add each element to it as we go along:</p>
+<p>user=&gt; (reduce conj #{} [:a :b :b :b :a :a])</p>
+<h1 id="a-b">{:a :b}</h1>
+<p>Reducing elements into a collection has its own name: into. We can conj [key value] vectors into a map, for instance, or build up a list:</p>
+<p>user=&gt; (into {} [[:a 2] [:b 3]])
+{:a 2, :b 3}
+user=&gt; (into (list) [1 2 3 4])
+(4 3 2 1)
+Because elements added to a list appear at the beginning, not the end, this expression reverses the sequence. Vectors conj onto the end, so to emit the elements in order, using reduce, we might try:</p>
+<p>user=&gt; (reduce conj [] [1 2 3 4 5])
+(reduce conj [] [1 2 3 4 5])
+[1 2 3 4 5]
+Which brings up an interesting thought: this looks an awful lot like map. All that&#x2019;s missing is some kind of transformation applied to each element.</p>
+<p>(defn my-map [f coll]
+  (reduce (fn [output element]
+            (conj output (f element)))
+          []
+          coll))
+user=&gt; (my-map inc [1 2 3 4])
+[2 3 4 5]
+Huh. map is just a special kind of reduce. What about, say, take-while?</p>
+<p>(defn my-take-while [f coll]
+  (reduce (fn [out elem]
+            (if (f elem)
+              (conj out elem)
+              (reduced out)))
+          []
+          coll))
+We&#x2019;re using a special function here, reduced, to indicate that we&#x2019;ve completed our reduction early and can skip the rest of the sequence.</p>
+<p>user=&gt; (my-take-while pos? [2 1 0 -1 0 1 2])
+[2 1]
+reduce really is the uberfunction over sequences. Almost any operation on a sequence can be expressed in terms of a reduce&#x2013;though for various reasons, many of the Clojure sequence functions are not written this way. For instance, take-while is actually defined like so:</p>
+<p>user=&gt; (source take-while)
+(defn take-while
+  &quot;Returns a lazy sequence of successive items from coll while
+  (pred item) returns true. pred must be free of side-effects.&quot;
+  {:added &quot;1.0&quot;
+   :static true}
+  [pred coll]
+  (lazy-seq
+   (when-let [s (seq coll)]
+       (when (pred (first s))
+         (cons (first s) (take-while pred (rest s)))))))
+There&#x2019;s a few new pieces here, but the structure is essentially the same as our initial attempt at writing map. When the predicate matches the first element, cons the first element onto take-while, applied to the rest of the sequence. That lazy-seq construct allows Clojure to compute this sequence as required, instead of right away. It defers execution to a later time.</p>
+<p>Most of Clojure&#x2019;s sequence functions are lazy. They don&#x2019;t do anything until needed. For instance, we can increment every number from zero to infinity:</p>
+<p>user=&gt; (def infseq (map inc (iterate inc 0)))</p>
+<h1 id="userinfseq">&apos;user/infseq</h1>
+<p>user=&gt; (realized? infseq)
+false
+That function returned immediately. Because it hasn&#x2019;t done any work yet, we say the sequence is unrealized. It doesn&#x2019;t increment any numbers at all until we ask for them:</p>
+<p>user=&gt; (take 10 infseq)
+(1 2 3 4 5 6 7 8 9 10)
+user=&gt; (realized? infseq)
+true
+Lazy sequences also remember their contents, once evaluated, for faster access.</p>
+<p>Putting it all together
+We&#x2019;ve seen how recursion generalizes a function over one thing into a function over many things, and discovered a rich landscape of recursive functions over sequences. Now let&#x2019;s use our knowledge of sequences to solve a more complex problem: find the sum of the products of consecutive pairs of the first 1000 odd integers.</p>
+<p>First, we&#x2019;ll need the integers. We can start with 0, and work our way up to infinity. To save time printing an infinite number of integers, we&#x2019;ll start with just the first 10.</p>
+<p>user=&gt; (take 10 (iterate inc 0))
+(0 1 2 3 4 5 6 7 8 9)
+Now we need to find only the ones which are odd. Remember, filter pares down a sequence to only those elements which pass a test.</p>
+<p>user=&gt; (take 10 (filter odd? (iterate inc 0)))
+(1 3 5 7 9 11 13 15 17 19)
+For consecutive pairs, we want to take [1 3 5 7 ...] and find a sequence like ([1 3] [3 5] [5 7] ...). That sounds like a job for partition:</p>
+<p>user=&gt; (take 3 (partition 2 (filter odd? (iterate inc 0))))
+((1 3) (5 7) (9 11))
+Not quite right&#x2013;this gave us non-overlapping pairs, but we wanted overlapping ones too. A quick check of (doc partition) reveals the step parameter:</p>
+<p>user=&gt; (take 3 (partition 2 1 (filter odd? (iterate inc 0))))
+((1 3) (3 5) (5 7))
+Now we need to find the product for each pair. Given a pair, multiply the two pieces together&#x2026; yes, that sounds like map:</p>
+<p>user=&gt; (take 3 (map (fn [pair] (* (first pair) (second pair)))
+                    (partition 2 1 (filter odd? (iterate inc 0)))))
+(3 15 35)
+Getting a bit unwieldy, isn&#x2019;t it? Only one final step: sum all those products. We&#x2019;ll adjust the take to include the first 1000, not the first 3, elements.</p>
+<p>user=&gt; (reduce +
+               (take 1000
+                     (map (fn [pair] (* (first pair) (second pair)))
+                          (partition 2 1
+                                    (filter odd?
+                                            (iterate inc 0)))))
+1335333000
+The sum of the first thousand products of consecutive pairs of the odd integers starting at 0. See how each part leads to the next? This expression looks a lot like the way we phrased the problem in English&#x2013;but both English and Lisp expressions are sort of backwards, in a way. The part that happens first appears deepest, last, in the expression. In a <a href="../GLOSSARY.html#chain" class="glossary-term" title="">chain</a> of reasoning like this, it&#x2019;d be nicer to write it in order.</p>
+<p>user=&gt; (-&gt;&gt; 0
+            (iterate inc)
+            (filter odd?)
+            (partition 2 1)
+            (map (fn [pair]
+                   (* (first pair) (second pair))))
+            (take 1000)
+            (reduce +))
+1335333000
+Much easier to read: now everything flows in order, from top to bottom, and we&#x2019;ve flattened out the deeply nested expressions into a single level. This is how object-oriented languages structure their expressions: as a <a href="../GLOSSARY.html#chain" class="glossary-term" title="">chain</a> of function invocations, each acting on the previous value.</p>
+<p>But how is this possible? Which expression gets evaluated first? (take 1000) isn&#x2019;t even a valid call&#x2013;where&#x2019;s its second argument? How are any of these forms evaluated?</p>
+<p>What kind of arcane function is -&gt;&gt;?</p>
+<p>All these mysteries, and more, in Chapter 5: Macros.</p>
+<p>Problems
+Write a function to find out if a string is a palindrome&#x2013;that is, if it looks the same forwards and backwards.
+Find the number of &#x2018;c&#x2019;s in &#x201C;abracadabra&#x201D;.
+Write your own version of filter.
+Find the first 100 prime numbers: 2, 3, 5, 7, 11, 13, 17, &#x2026;.</p>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="functions.html" class="navigation navigation-prev " aria-label="Previous page: Functions">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="control-flow.html" class="navigation navigation-next " aria-label="Next page: Control Flow">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"Sequences","level":"1.23.5","depth":2,"next":{"title":"Control Flow","level":"1.23.6","depth":2,"path":"reference/control-flow.md","ref":"reference/control-flow.md","articles":[]},"previous":{"title":"Functions","level":"1.23.4","depth":2,"path":"reference/functions.md","ref":"reference/functions.md","articles":[]},"dir":"ltr"},"config":{"plugins":["toggle-chapters","codeblock-disable-glossary","richquotes","disqus","exercises","quizzes","ga","toolbar","sectionx"],"styles":{"website":"styles/website.css","ebook":"styles/ebook.css","pdf":"styles/pdf.css","mobi":"styles/mobi.css","epub":"styles/epub.css"},"pluginsConfig":{"disqus":{"shortName":"clojure-practicalli","useIdentifier":false},"search":{},"lunr":{"maxIndexSize":1000000},"codeblock-disable-glossary":{},"fontsettings":{"theme":"white","family":"sans","size":2},"quizzes":{},"richquotes":{"todos":true},"sectionx":{},"highlight":{},"ga":{"token":"UA-28030709-7","configuration":"auto"},"exercises":{},"toolbar":{"buttons":[{"label":"Gitter Chat","icon":"fa fa-comments-o","url":"https://gitter.im/practicalli/chat?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge"},{"label":"GitHub","icon":"fa fa-github","url":"https://github.com/practicalli"},{"label":"Search page title on StackOverflow","icon":"fa fa-stack-overflow","url":"http://stackoverflow.com/search?q={{title}}"}]},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"toggle-chapters":{}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"Clojure, Practicalli","gitbook":">=2.0.0"},"file":{"path":"reference/sequences.md","mtime":"2016-06-07T10:26:09.612Z","type":"markdown"},"gitbook":{"version":"3.0.3","time":"2016-06-10T16:27:57.111Z"},"basePath":"..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../gitbook/gitbook-plugin-exercises/jsrepl/jsrepl.js" id="jsrepl-script"></script>
+    
+    <script src="../gitbook/gitbook.js"></script>
+    <script src="../gitbook/theme.js"></script>
+    
+        
+        <script src="../gitbook/gitbook-plugin-toggle-chapters/toggle.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-codeblock-disable-glossary/disable-glossary.js"></script>
+        
+    
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/URI.js/1.16.1/URI.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-disqus/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-exercises/ace/ace.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-exercises/ace/theme-tomorrow.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-exercises/ace/mode-javascript.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-exercises/exercises.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-quizzes/quizzes.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-ga/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-toolbar/buttons.js"></script>
+        
+    
+        
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-sectionx/sectionx.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-fontsettings/buttons.js"></script>
+        
+    
+
+
+    </body>
+</html>
+

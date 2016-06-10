@@ -1,0 +1,2480 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <title>More Java fun · Clojure, Practicalli</title>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.0.3">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-toggle-chapters/toggle.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-richquotes/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-disqus/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-exercises/exercises.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-quizzes/quizzes.css">
+                
+            
+                
+                <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-sectionx/sectionx.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+        <link rel="stylesheet" href="../styles/website.css">
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="quick-look-at-types.html" />
+    
+    
+    <link rel="prev" href="java-interop.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    Introduction
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="../using-the-workshop/">
+            
+                <a href="../using-the-workshop/">
+            
+                    
+                    How to use the workshop
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.1" data-path="../using-the-workshop/requirements.html">
+            
+                <a href="../using-the-workshop/requirements.html">
+            
+                    
+                    Technical Requirements
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2" data-path="../using-the-workshop/code-examples.html">
+            
+                <a href="../using-the-workshop/code-examples.html">
+            
+                    
+                    Code Examples
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="../development-environments/">
+            
+                <a href="../development-environments/">
+            
+                    
+                    Development Environments
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1" data-path="../development-environments/java.html">
+            
+                <a href="../development-environments/java.html">
+            
+                    
+                    Java
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2" data-path="../development-environments/leiningen.html">
+            
+                <a href="../development-environments/leiningen.html">
+            
+                    
+                    Leiningen
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3" data-path="../development-environments/lighttable.html">
+            
+                <a href="../development-environments/lighttable.html">
+            
+                    
+                    LightTable
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.4" data-path="../development-environments/other-tools.html">
+            
+                <a href="../development-environments/other-tools.html">
+            
+                    
+                    Other tools
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="../overview/">
+            
+                <a href="../overview/">
+            
+                    
+                    Overview of Clojure
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.1" data-path="../overview/purpose.html">
+            
+                <a href="../overview/purpose.html">
+            
+                    
+                    When to use Clojure
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.2" data-path="../overview/who-uses-clojure.html">
+            
+                <a href="../overview/who-uses-clojure.html">
+            
+                    
+                    Who uses Clojure
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.3" data-path="../overview/syntax.html">
+            
+                <a href="../overview/syntax.html">
+            
+                    
+                    The syntax
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.4" data-path="../overview/design.html">
+            
+                <a href="../overview/design.html">
+            
+                    
+                    Design
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.5" data-path="../overview/repl.html">
+            
+                <a href="../overview/repl.html">
+            
+                    
+                    Read, Evaluate, Print Loop (REPL)
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.6" data-path="../overview/all-bytecode-in-the-end.html">
+            
+                <a href="../overview/all-bytecode-in-the-end.html">
+            
+                    
+                    All bytecode in the end
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.7" data-path="../overview/features.html">
+            
+                <a href="../overview/features.html">
+            
+                    
+                    Features in more depth
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="./">
+            
+                <a href="./">
+            
+                    
+                    Some Basic Clojure
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.5.1" data-path="whats-my-environment.html">
+            
+                <a href="whats-my-environment.html">
+            
+                    
+                    Whats my environment
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.2" data-path="reading-project-file.html">
+            
+                <a href="reading-project-file.html">
+            
+                    
+                    Reading project file
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.3" data-path="threading-syntactic-sugar.html">
+            
+                <a href="threading-syntactic-sugar.html">
+            
+                    
+                    Threading syntactic sugar
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.4" data-path="show-me-the-docs.html">
+            
+                <a href="show-me-the-docs.html">
+            
+                    
+                    Show me the docs
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.5" data-path="java-interop.html">
+            
+                <a href="java-interop.html">
+            
+                    
+                    Java Interoperability
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.5.6" data-path="more-java-fun.html">
+            
+                <a href="more-java-fun.html">
+            
+                    
+                    More Java fun
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.7" data-path="quick-look-at-types.html">
+            
+                <a href="quick-look-at-types.html">
+            
+                    
+                    Quick look at Types
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.8" data-path="strings.html">
+            
+                <a href="strings.html">
+            
+                    
+                    Strings
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.9" data-path="numbers-maths.html">
+            
+                <a href="numbers-maths.html">
+            
+                    
+                    Numbers & Maths
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.10" data-path="ratios.html">
+            
+                <a href="ratios.html">
+            
+                    
+                    Ratios
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.11" data-path="assigning-names.html">
+            
+                <a href="assigning-names.html">
+            
+                    
+                    Assigning Names
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.12" data-path="defining-functions.html">
+            
+                <a href="defining-functions.html">
+            
+                    
+                    Defining Functions
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.13" data-path="namespace.html">
+            
+                <a href="namespace.html">
+            
+                    
+                    Namespace
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.14" data-path="control-flow.html">
+            
+                <a href="control-flow.html">
+            
+                    
+                    Control flow
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" data-path="../data-structures/">
+            
+                <a href="../data-structures/">
+            
+                    
+                    Data structures
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.6.1" data-path="../data-structures/list.html">
+            
+                <a href="../data-structures/list.html">
+            
+                    
+                    List
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.2" data-path="../data-structures/map.html">
+            
+                <a href="../data-structures/map.html">
+            
+                    
+                    Map
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.3" data-path="../data-structures/vector.html">
+            
+                <a href="../data-structures/vector.html">
+            
+                    
+                    Vector
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.4" data-path="../data-structures/set.html">
+            
+                <a href="../data-structures/set.html">
+            
+                    
+                    Set
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7" data-path="../using-data-structures/">
+            
+                <a href="../using-data-structures/">
+            
+                    
+                    Using data structures
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.7.1" data-path="../using-data-structures/applying-functions.html">
+            
+                <a href="../using-data-structures/applying-functions.html">
+            
+                    
+                    Applying functions
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.2" data-path="../using-data-structures/mapping-data-structures.html">
+            
+                <a href="../using-data-structures/mapping-data-structures.html">
+            
+                    
+                    Mapping functions
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8" data-path="../modifying-data-structures/">
+            
+                <a href="../modifying-data-structures/">
+            
+                    
+                    Modifying data structures
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.8.1" data-path="../modifying-data-structures/lists.html">
+            
+                <a href="../modifying-data-structures/lists.html">
+            
+                    
+                    Lists
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.2" data-path="../modifying-data-structures/maps.html">
+            
+                <a href="../modifying-data-structures/maps.html">
+            
+                    
+                    Maps
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.3" data-path="../modifying-data-structures/vectors.html">
+            
+                <a href="../modifying-data-structures/vectors.html">
+            
+                    
+                    Vectors
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.4" data-path="../modifying-data-structures/sets.html">
+            
+                <a href="../modifying-data-structures/sets.html">
+            
+                    
+                    Sets
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9" data-path="../defining-behaviour-with-functions/">
+            
+                <a href="../defining-behaviour-with-functions/">
+            
+                    
+                    Defing behaviour with Functions
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.9.1" data-path="../defining-behaviour-with-functions/syntax.html">
+            
+                <a href="../defining-behaviour-with-functions/syntax.html">
+            
+                    
+                    Syntax
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.2" data-path="../defining-behaviour-with-functions/calling-functions.html">
+            
+                <a href="../defining-behaviour-with-functions/calling-functions.html">
+            
+                    
+                    Calling functions
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.3" data-path="../defining-behaviour-with-functions/examples.html">
+            
+                <a href="../defining-behaviour-with-functions/examples.html">
+            
+                    
+                    Examples
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.4" data-path="../defining-behaviour-with-functions/parameters.html">
+            
+                <a href="../defining-behaviour-with-functions/parameters.html">
+            
+                    
+                    Parameters
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.5" data-path="../defining-behaviour-with-functions/using-functions-over-data-structures.html">
+            
+                <a href="../defining-behaviour-with-functions/using-functions-over-data-structures.html">
+            
+                    
+                    Using Functions over data structures
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10" data-path="../defining-functions/">
+            
+                <a href="../defining-functions/">
+            
+                    
+                    Defining fuctions
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.10.1" data-path="../defining-functions/let-local-values.html">
+            
+                <a href="../defining-functions/let-local-values.html">
+            
+                    
+                    let local values
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11" data-path="../control-flow/">
+            
+                <a href="../control-flow/">
+            
+                    
+                    Control flow
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.11.1" data-path="../control-flow/if.html">
+            
+                <a href="../control-flow/if.html">
+            
+                    
+                    if
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11.2" data-path="../control-flow/cond.html">
+            
+                <a href="../control-flow/cond.html">
+            
+                    
+                    cond
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11.3" data-path="../control-flow/when.html">
+            
+                <a href="../control-flow/when.html">
+            
+                    
+                    when
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12" data-path="../local-assignement/">
+            
+                <a href="../local-assignement/">
+            
+                    
+                    Local Assignment
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.13" data-path="../simple-project/">
+            
+                <a href="../simple-project/">
+            
+                    
+                    Simple project
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.13.1" data-path="../simple-project/create-project.html">
+            
+                <a href="../simple-project/create-project.html">
+            
+                    
+                    Create a project
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.13.2" data-path="../simple-project/run-the-repl.html">
+            
+                <a href="../simple-project/run-the-repl.html">
+            
+                    
+                    Run the REPL
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.14" data-path="../what-is-functional-programming/">
+            
+                <a href="../what-is-functional-programming/">
+            
+                    
+                    What is Functional Programming
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.15" data-path="../thinking-functionally/">
+            
+                <a href="../thinking-functionally/">
+            
+                    
+                    Thinking Functionally
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.15.1" data-path="../thinking-functionally/side-effects.html">
+            
+                <a href="../thinking-functionally/side-effects.html">
+            
+                    
+                    Side effects
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.15.2" data-path="../thinking-functionally/pure-functions.html">
+            
+                <a href="../thinking-functionally/pure-functions.html">
+            
+                    
+                    Pure functions
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.15.3" data-path="../thinking-functionally/impure-functions.html">
+            
+                <a href="../thinking-functionally/impure-functions.html">
+            
+                    
+                    Impure functions
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.15.4" data-path="../thinking-functionally/first-class-functions.html">
+            
+                <a href="../thinking-functionally/first-class-functions.html">
+            
+                    
+                    First Class functions
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.15.5" data-path="../thinking-functionally/homoiconicity.html">
+            
+                <a href="../thinking-functionally/homoiconicity.html">
+            
+                    
+                    Homoiconicity
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.15.6" data-path="../thinking-functionally/higher-order-functions.html">
+            
+                <a href="../thinking-functionally/higher-order-functions.html">
+            
+                    
+                    Higher Order functions
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.15.7" data-path="../thinking-functionally/chaining-functions.html">
+            
+                <a href="../thinking-functionally/chaining-functions.html">
+            
+                    
+                    Chaining functions
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.15.7.1" data-path="../thinking-functionally/threading-macros.html">
+            
+                <a href="../thinking-functionally/threading-macros.html">
+            
+                    
+                    Threading macros
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.15.7.2" data-path="../thinking-functionally/example-hitchhikers-guide.html">
+            
+                <a href="../thinking-functionally/example-hitchhikers-guide.html">
+            
+                    
+                    Example: Hitchhikers Guide
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.15.8" data-path="../thinking-functionally/immutable.html">
+            
+                <a href="../thinking-functionally/immutable.html">
+            
+                    
+                    Immutability
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.15.8.1" data-path="../thinking-functionally/copying-collections.html">
+            
+                <a href="../thinking-functionally/copying-collections.html">
+            
+                    
+                    Copying collections
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.15.8.2" data-path="../thinking-functionally/persistent-data-structures.html">
+            
+                <a href="../thinking-functionally/persistent-data-structures.html">
+            
+                    
+                    Persistent data structures
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.15.9" data-path="../thinking-functionally/list-comprehension.html">
+            
+                <a href="../thinking-functionally/list-comprehension.html">
+            
+                    
+                    List Comprehension
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.15.10" data-path="../thinking-functionally/lazy-evaluation.html">
+            
+                <a href="../thinking-functionally/lazy-evaluation.html">
+            
+                    
+                    Lazy Evaluation
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.15.11" data-path="../thinking-functionally/sequences.html">
+            
+                <a href="../thinking-functionally/sequences.html">
+            
+                    
+                    Sequences
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.15.12" data-path="../thinking-functionally/sequence-abstractions.html">
+            
+                <a href="../thinking-functionally/sequence-abstractions.html">
+            
+                    
+                    Sequence-abstraction
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.15.13" data-path="../thinking-functionally/functors.html">
+            
+                <a href="../thinking-functionally/functors.html">
+            
+                    
+                    Functors
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.15.14" data-path="../thinking-functionally/arity.html">
+            
+                <a href="../thinking-functionally/arity.html">
+            
+                    
+                    Arity
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.15.15" data-path="../thinking-functionally/pattern-matching.html">
+            
+                <a href="../thinking-functionally/pattern-matching.html">
+            
+                    
+                    Pattern matching
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.15.16" data-path="../thinking-functionally/polymorphism.html">
+            
+                <a href="../thinking-functionally/polymorphism.html">
+            
+                    
+                    Polymorphism
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.15.17" data-path="../thinking-functionally/recursion.html">
+            
+                <a href="../thinking-functionally/recursion.html">
+            
+                    
+                    Recursion
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.15.18" data-path="../thinking-functionally/recursion-polymorphism.html">
+            
+                <a href="../thinking-functionally/recursion-polymorphism.html">
+            
+                    
+                    Recursion & Polymorphism
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.15.19" data-path="../thinking-functionally/tail-recursion.html">
+            
+                <a href="../thinking-functionally/tail-recursion.html">
+            
+                    
+                    Tail recursion
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.15.20" data-path="../thinking-functionally/partial-functions.html">
+            
+                <a href="../thinking-functionally/partial-functions.html">
+            
+                    
+                    Currying & Partial Functions
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.15.21" data-path="../thinking-functionally/anonymous-functions.html">
+            
+                <a href="../thinking-functionally/anonymous-functions.html">
+            
+                    
+                    Anonymous Functions
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.15.22" data-path="../thinking-functionally/naming.html">
+            
+                <a href="../thinking-functionally/naming.html">
+            
+                    
+                    Naming
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.15.22.1" data-path="../thinking-functionally/global-definitions.html">
+            
+                <a href="../thinking-functionally/global-definitions.html">
+            
+                    
+                    Global definitions
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.15.22.2" data-path="../thinking-functionally/local-bindings.html">
+            
+                <a href="../thinking-functionally/local-bindings.html">
+            
+                    
+                    Local Bindings
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.15.22.3" data-path="../thinking-functionally/private-functions.html">
+            
+                <a href="../thinking-functionally/private-functions.html">
+            
+                    
+                    Private functions
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.16" data-path="../thinking-functionally/managing-state-changes.html">
+            
+                <a href="../thinking-functionally/managing-state-changes.html">
+            
+                    
+                    Managing state changes
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.17" data-path="../libraries/">
+            
+                <a href="../libraries/">
+            
+                    
+                    Libraries
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.17.1" data-path="../libraries/clojars.html">
+            
+                <a href="../libraries/clojars.html">
+            
+                    
+                    Clojars
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.17.2" data-path="../libraries/om.html">
+            
+                <a href="../libraries/om.html">
+            
+                    
+                    om
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.17.3" data-path="../libraries/edn.html">
+            
+                <a href="../libraries/edn.html">
+            
+                    
+                    edn
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.18" data-path="../testing/">
+            
+                <a href="../testing/">
+            
+                    
+                    Testing
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.18.1" data-path="../testing/">
+            
+                <a href="../testing/">
+            
+                    
+                    Testing
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.18.2" data-path="../testing/">
+            
+                <a href="../testing/">
+            
+                    
+                    Testing
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.18.3" data-path="../testing/">
+            
+                <a href="../testing/">
+            
+                    
+                    Testing
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.19" data-path="../leiningen/">
+            
+                <a href="../leiningen/">
+            
+                    
+                    Leiningen Configuration
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.19.1" data-path="../leiningen/create-a-project.html">
+            
+                <a href="../leiningen/create-a-project.html">
+            
+                    
+                    Create a project
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.19.2" data-path="../leiningen/run-the-repl.html">
+            
+                <a href="../leiningen/run-the-repl.html">
+            
+                    
+                    Run the REPL
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.19.3" data-path="../leiningen/profile.html">
+            
+                <a href="../leiningen/profile.html">
+            
+                    
+                    Profiles overview
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.19.4" data-path="../leiningen/adding-a-dev-profile.html">
+            
+                <a href="../leiningen/adding-a-dev-profile.html">
+            
+                    
+                    Adding a dev profile
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.19.5" data-path="../leiningen/templates.html">
+            
+                <a href="../leiningen/templates.html">
+            
+                    
+                    Templates
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.19.6" data-path="../leiningen/create-a-template.html">
+            
+                <a href="../leiningen/create-a-template.html">
+            
+                    
+                    Create a template
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.19.7" data-path="../leiningen/plugins.html">
+            
+                <a href="../leiningen/plugins.html">
+            
+                    
+                    Plugins
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.20" data-path="../explaining-macros.html">
+            
+                <a href="../explaining-macros.html">
+            
+                    
+                    Explaining Macros
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.21" data-path="../work-in-progress.html">
+            
+                <a href="../work-in-progress.html">
+            
+                    
+                    Work in Progress
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.22" data-path="../where-next.html">
+            
+                <a href="../where-next.html">
+            
+                    
+                    Where next
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.23" data-path="../reference/">
+            
+                <a href="../reference/">
+            
+                    
+                    Reference
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.23.1" data-path="../reference/basic-syntax.html">
+            
+                <a href="../reference/basic-syntax.html">
+            
+                    
+                    Basic Syntax
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.23.2" data-path="../reference/naming.html">
+            
+                <a href="../reference/naming.html">
+            
+                    
+                    Naming
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.23.3" data-path="../reference/naming-conventions.html">
+            
+                <a href="../reference/naming-conventions.html">
+            
+                    
+                    Naming Conventions
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.23.4" data-path="../reference/functions.html">
+            
+                <a href="../reference/functions.html">
+            
+                    
+                    Functions
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.23.5" data-path="../reference/sequences.html">
+            
+                <a href="../reference/sequences.html">
+            
+                    
+                    Sequences
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.23.6" data-path="../reference/control-flow.html">
+            
+                <a href="../reference/control-flow.html">
+            
+                    
+                    Control Flow
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.23.7" data-path="../reference/persistent-data-structures.html">
+            
+                <a href="../reference/persistent-data-structures.html">
+            
+                    
+                    Persistent Data Structures
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.23.8" data-path="../reference/changing-state.html">
+            
+                <a href="../reference/changing-state.html">
+            
+                    
+                    Changing State
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.23.9" data-path="../reference/reader-macros.html">
+            
+                <a href="../reference/reader-macros.html">
+            
+                    
+                    Reader Macros
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.23.10" data-path="../reference/core-async.html">
+            
+                <a href="../reference/core-async.html">
+            
+                    
+                    Core.async
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.23.11" data-path="../reference/prasmatic-schema.html">
+            
+                <a href="../reference/prasmatic-schema.html">
+            
+                    
+                    Prasmatic Schema
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.23.12" data-path="../reference/books.html">
+            
+                <a href="../reference/books.html">
+            
+                    
+                    Books on Clojure
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.24" data-path="../lighttable/">
+            
+                <a href="../lighttable/">
+            
+                    
+                    Lighttable
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.24.1" data-path="../lighttable/configure-keyboard-mappings.html">
+            
+                <a href="../lighttable/configure-keyboard-mappings.html">
+            
+                    
+                    Configure Keyboard mappings
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >More Java fun</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="more-java-fun">More Java fun</h1>
+<p>Lets try some more examples to show how easy it is to use Java methods and objects.  Remember that everything in <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/package-summary.html" _target="blank">java.lang</a> is available in your Clojure project by default</p>
+<h2 id="returning-specific-types">Returning specific types</h2>
+<p>Clojure has types, after all it runs on the JVM and included <code>java.lang</code> library in ever project.  Types are infered at runtime, saving you the need to design types yourself.</p>
+<p>Sometimes you want to ensure a value is of a particular type and you can use Java to do this.</p>
+<blockquote class="clearfix alert alert-info"><strong class="fa fa-4x fa-edit"></strong>
+<p> Return a string value as an integer</p>
+</blockquote>
+<pre><code class="lang-clojure">(<span class="hljs-name"><span class="hljs-builtin-name">.</span></span> Integer <span class="hljs-string">&quot;123)
+
+;; Or the more common short-hand form
+
+(Integer. &quot;</span><span class="hljs-number">123</span><span class="hljs-string">&quot;)
+</span></code></pre>
+<p>This is the equivalent to the Java code:</p>
+<pre><code class="lang-java">Integer myInt = <span class="hljs-keyword">new</span> Integer(<span class="hljs-string">&quot;123&quot;</span>);
+</code></pre>
+<p>The <code>.</code> function essentially instantiates a new object from the class, in this case <code>Integer</code>, passing any arguments to its constructor.</p>
+<blockquote class="clearfix alert alert-success"><strong class="fa fa-4x fa-lightbulb-o"></strong>
+<p> Example: converting the port number read from an environment variable as a string which needs to be passed to the Jetty server as a number.  See the <a href="http://practical.li/clojure-webapps" _target="blank">Clojure Webapp workshop</a> an example.</p>
+<p>More on types in the section <a href="a-quick-look-at-types.html">a quick look at types</a></p>
+<p><strong>fixme</strong> The following is work in progress</p>
+</blockquote>
+<h2 id="using-java-date">Using Java date</h2>
+<blockquote class="clearfix alert alert-info"><strong class="fa fa-4x fa-edit"></strong>
+<p> Use <code>java.util.Date</code> to explore date and time</p>
+</blockquote>
+<pre><code class="lang-clojure">(<span class="hljs-name"><span class="hljs-builtin-name">import</span></span> java.util.Date)
+
+(<span class="hljs-name">Date.</span>)
+
+(<span class="hljs-name"><span class="hljs-builtin-name">def</span></span> now (<span class="hljs-name">Date.</span>))
+
+(<span class="hljs-name"><span class="hljs-builtin-name">str</span></span> now)
+</code></pre>
+<p><img src="../images/clojure-playground-java-util-date.png" alt="Using java.util.Date"></p>
+<p>Its easy to create a local reference to a Java Date object instance and then call methods on that date object</p>
+<pre><code class="lang-clojure">(<span class="hljs-name"><span class="hljs-builtin-name">let</span></span> [date (<span class="hljs-name">java.util.Date.</span>)] (<span class="hljs-name">.getHours</span> date))
+</code></pre>
+<p>Or using the threading macro, we can make the code a little clearer</p>
+<pre><code class="lang-undefined">(-&gt; 
+   (java.util.Date.)
+   (.getHours))
+</code></pre>
+<h2 id="its-joda-time">Its Joda Time</h2>
+<p><code>clj-time</code> is a Clojure wrapper for Joda time.  As this is an external library, you need to add it to your project.clj file as a dependency.  To find the latest version, check the <a href="">clj-time library on Clojars.org</a></p>
+<blockquote class="clearfix alert alert-info"><strong class="fa fa-4x fa-edit"></strong>
+<p> Add the clj-time dependency to your project (restart needed), require the clj-time library in your code and use the functions <code>now</code>, <code>formatters</code>&amp; <code>unparse</code></p>
+</blockquote>
+<pre><code class="lang-undefined">(require &apos;[clj-time.core :as time])
+(require &apos;[clj-time.format :as time-format])
+
+(time/now)  
+
+;; ISO 8601 UTC format
+(def time-formatter (time-format/formatters :basic-date-time))  
+(time-format/unparse custom-formatter (date-time 2010 10 3))
+</code></pre>
+<h2 id="swing-coding">Swing coding</h2>
+<p>Swing GUI coding in Java feels quite messy to me, however using Swing in Clojure feels much cleaner.  Using the <code>doto</code> function allow you to <a href="../GLOSSARY.html#chain" class="glossary-term" title="">chain</a> function (Java method) calls together.</p>
+<blockquote class="clearfix alert alert-info"><strong class="fa fa-4x fa-edit"></strong>
+<p>  Start with the <code>import</code> function to add the neccessary swing libraries.  Then create a button and add it to a panel, adding that panel to a frame.</p>
+</blockquote>
+<pre><code class="lang-undefined">(import &apos;(javax.swing JFrame JPanel JButton))
+(def button (JButton. &quot;Click Me!&quot;))
+(def panel (doto (JPanel.)
+             (.add button)))
+(def frame (doto (JFrame. &quot;Hello Frame&quot;)
+             (.setSize 200 200)
+             (.setContentPane panel)
+             (.setVisible true)))
+</code></pre>
+<p>Let&#x2019;s make our button show a message using an JOptionPane/showMessageDialog widget</p>
+<pre><code class="lang-undefined">(import &apos;javax.swing.JOptionPane)
+(defn say-hello []
+  (JOptionPane/showMessageDialog
+    nil &quot;Hello, World!&quot; &quot;Greeting&quot;
+    JOptionPane/INFORMATION_MESSAGE))
+</code></pre>
+<p>To connect this function to our button, write a class implementing the ActionListener interface.  Clojure&#x2019;s proxy feature is the easiest way to do this:</p>
+<pre><code class="lang-undefined">(import &apos;java.awt.event.ActionListener)
+(def act (proxy [ActionListener] []
+           (actionPerformed [event] (say-hello))))
+</code></pre>
+<p><code>act</code> is an instance of an anonymous class implementing the actionPerformed method, so attach this class as a listener the button</p>
+<pre><code class="lang-undefined">(.addActionListener button act)
+</code></pre>
+<p>Now evaluate the <code>say-hello</code> function to see the new button in action.</p>
+<pre><code class="lang-undefined">(say-hello)
+</code></pre>
+<blockquote class="clearfix alert alert-success"><strong class="fa fa-4x fa-lightbulb-o"></strong>
+<p> <a href="https://github.com/daveray/seesaw" _target="blank">Seesaw</a> is a really nice library for swing development.  Also talk a look at the <a href="http://nathanwilliams.github.io/2013/05/15/seesaw-gui-programming-the-clojure-way/" _target="blank">Seesaw minesweeper</a> series.</p>
+</blockquote>
+<h2 id="understanding-the-dot-special-form">Understanding the dot special form</h2>
+<blockquote class="clearfix alert alert-danger"><strong class="fa fa-4x fa-bug"></strong>
+<p> This section onwards needs reworking</p>
+</blockquote>
+<p>All of these examples (except java.lang.Math/PI) use macros which expand to use the dot special form. In general, you won&apos;t need to use the dot special form unless you want to write your own macros to interact with Java objects and classes. Nevertheless, here is each example followed by its macroexpansion:</p>
+<pre><code class="lang-undefined">(macroexpand-1 &apos;(.toUpperCase &quot;By Bluebeard&apos;s bananas!&quot;))
+; =&gt; (. &quot;By Bluebeard&apos;s bananas!&quot; toUpperCase)
+
+(macroexpand-1 &apos;(.indexOf &quot;Let&apos;s synergize our bleeding edges&quot; &quot;y&quot;))
+; =&gt; (. &quot;Let&apos;s synergize our bleeding edges&quot; indexOf &quot;y&quot;)
+
+(macroexpand-1 &apos;(Math/abs -3))
+; =&gt; (. Math abs -3)
+</code></pre>
+<p>You can think of the general form of the dot operator as:</p>
+<pre><code class="lang-undefined">(. object-expr-or-classname-symbol method-or-member-symbol optional-args*)
+</code></pre>
+<p>There are a few more details to the dot operator than that, and if you&apos;re interested in exploring it further you can look at clojure.org&apos;s documentation on Java interop.</p>
+<p>Input/output involves resources, be they files, sockets, buffers, or whatever. Java has separate classes for reading a resource&apos;s contents, writings its contents, and for interacting with the resource&apos;s properties.</p>
+<p>For example, the java.io.File class is used to interact with a file&apos;s properties. Among other things, you can use it to check whether a file exists, to get the file&apos;s read/write/execute permissions, and to get its filesystem path:</p>
+<pre><code class="lang-undefined">(let [file (java.io.File. &quot;/&quot;)]
+  (println (.exists file))
+  (println (.canWrite file))
+  (println (.getPath file)))
+; =&gt; true
+; =&gt; false
+; =&gt; /
+</code></pre>
+<p>Noticeably missing from this list of capabilities are reading and writing. To read a file, you could use the java.io.BufferedReader class or perhaps java.io.FileReader. Likewise, you can use the java.io.BufferedWriter or java.io.FileWriter class for writing. There are other classes available for reading and writing as well, and which one you choose depends on your specific needs. Reader and Writer classes all have the same base set of methods for their interfaces; readers implement read, close, and more, while writers implement append, write, close, and flush. So, Java gives you a variety of tools for performing IO. A cynical person might say that Java gives you enough rope to hang yourself, and if you find such a person I hope you give them just enough arms to hug them.</p>
+<p>Either way, Clojure makes things easier for you. First, there&apos;s spit and slurp. Spit writes to a resource, and slurp reads from one. Here&apos;s an example of using them to write and read a file:</p>
+<pre><code class="lang-undefined">(spit &quot;/tmp/hercules-todo-list&quot;
+&quot;- kill dat lion brov
+- chop up what nasty multi-headed snake thing&quot;)
+
+(slurp &quot;/tmp/hercules-todo-list&quot;)
+
+; =&gt; &quot;- kill dat lion brov
+; =&gt;  - chop up what nasty multi-headed snake thing&quot;
+</code></pre>
+<p>You can also use these functions with objects representing resources other than files. The next example uses a StringWriter, which allows you to perform IO operations on a string:</p>
+<pre><code class="lang-undefined">(let [s (java.io.StringWriter.)]
+  (spit s &quot;- capture cerynian hind like for real&quot;)
+  (.toString s))
+; =&gt; &quot;- capture cerynian hind like for real&quot;
+</code></pre>
+<p>Naturally, you can also read from a StringReader with slurp:</p>
+<pre><code class="lang-undefined">(let [s (java.io.StringReader. &quot;- get erymanthian pig what with the tusks&quot;)]
+  (slurp s))
+; =&gt; &quot;- get erymanthian pig what with the tusks&quot;
+</code></pre>
+<p>Of course, you can also use the read and write methods for resources. It doesn&apos;t really make much of a difference which you use; spit and slurp are often convenient because they work with just a string representing a filesystem path or a URL.</p>
+<p>The with-open macro is another convenience: it implicitly closes a resource at the end of its body. There&apos;s also the reader function, a nice utility which, according to the clojure.java.io api docs, &quot;attempts to coerce its argument to an open java.io.Reader.&quot; This is convenient when you don&apos;t want to use slurp because you don&apos;t want to try to read a resource in its entirety, and you don&apos;t want to figure out which Java class you need to use. You could use it along with with-open and the line-seq function if you&apos;re trying to read a file one line at a time:</p>
+<pre><code class="lang-undefined">(with-open [todo-list-rdr (clojure.java.io/reader &quot;/tmp/hercules-todo-list&quot;)]
+  (doseq [todo (line-seq todo-list-rdr)]
+    (println todo)))
+; =&gt; - kill dat lion brov
+; =&gt; - chop up what nasty multi-headed snake thing
+</code></pre>
+<p>That should be enough for you to get started with IO in Clojure. If you&apos;re trying to do something more sophisticated, definitely take a look at the clojure.java.io docs, the java.nio.file package docs, or the java.io package docs.</p>
+<ol>
+<li>Summary</li>
+</ol>
+<p>In this chapter, you learned what it means for Clojure to be hosted on the JVM. Clojure programs get compiled to Java bytecode and executed within a JVM process. Clojure programs also have access to Java libraries, and you can easily interact with them using Clojure&apos;s interop facilities.</p>
+<ol>
+<li>Resources</li>
+</ol>
+<h2 id="from-httpclojureorgjavainterop">From <a href="http://clojure.org/java_interop" _target="blank">http://clojure.org/java_interop</a></h2>
+<pre><code class="lang-undefined">(.instanceMember instance args*)
+(.instanceMember Classname args*)
+(.-instanceField instance)
+
+(.toUpperCase &quot;fred&quot;)
+-&gt; &quot;FRED&quot;
+(.getName String)
+-&gt; &quot;java.lang.String&quot;
+(.-x (java.awt.Point. 1 2))
+-&gt; 1
+(System/getProperty &quot;java.vm.version&quot;)
+-&gt; &quot;1.6.0_07-b06-57&quot;
+Math/PI
+-&gt; 3.141592653589793
+</code></pre>
+<p>The preferred idiomatic forms for accessing field or method members are given above. The instance member form works for both fields and methods. The instanceField form is preferred for fields and required if both a field and a 0-argument method of the same name exist. They all expand into calls to the dot operator (described below) at macroexpansion time. The expansions are as follows:</p>
+<pre><code class="lang-undefined">(.instanceMember instance args*) ==&gt; (. instance instanceMember args*)
+(.instanceMember Classname args*) ==&gt;
+    (. (identity Classname) instanceMember args*)
+(.-instanceField instance) ==&gt; (. instance -instanceField)
+(Classname/staticMethod args*) ==&gt; (. Classname staticMethod args*)
+Classname/staticField ==&gt; (. Classname staticField)
+</code></pre>
+<p>The Dot special form</p>
+<pre><code class="lang-undefined">(. instance-expr member-symbol)
+(. Classname-symbol member-symbol)
+(. instance-expr -field-symbol)
+(. instance-expr (method-symbol args*)) or
+(. instance-expr method-symbol args*)
+(. Classname-symbol (method-symbol args*)) or
+(. Classname-symbol method-symbol args*)
+</code></pre>
+<p>Special form.</p>
+<p>The &apos;.&apos; special form is the basis for access to Java. It can be considered a member-access operator, and/or read as &apos;in the scope of&apos;.</p>
+<p>If the first operand is a symbol that resolves to a class name, the access is considered to be to a static member of the named class. Note that nested classes are named EnclosingClass$NestedClass, per the JVM spec. Otherwise it is presumed to be an instance member and the first argument is evaluated to produce the target object.</p>
+<p>If the second operand is a symbol and no args are supplied it is taken to be a field access - the name of the field is the name of the symbol, and the value of the expression is the value of the field, unless there is a no argument public method of the same name, in which case it resolves to a call to the method. If the second operand is a symbol starting with -, the member-symbol will resolve only as field access (never as a 0-arity method) and should be preferred when that is the intent.</p>
+<p>If the second operand is a list, or args are supplied, it is taken to be a method call. The first element of the list must be a simple symbol, and the name of the method is the name of the symbol. The args, if any, are evaluated from left to right, and passed to the matching method, which is called, and its value returned. If the method has a void return type, the value of the expression will be nil. Note that placing the method name in a list with any args is optional in the canonic form, but can be useful to gather args in macros built upon the form.</p>
+<p>Note that boolean return values will be turned into Booleans, chars will become Characters, and numeric primitives will become Numbers unless they are immediately consumed by a method taking a primitive.</p>
+<p>The member access forms given at the top of this section are preferred for use in all cases other than in macros.</p>
+<pre><code class="lang-undefined">(.. instance-expr member+)
+(.. Classname-symbol member+)
+member =&gt; fieldName-symbol or (instanceMethodName-symbol args*)
+</code></pre>
+<p>Macro. Expands into a member access (.) of the first member on the first argument, followed by the next member on the result, etc. For instance:</p>
+<pre><code class="lang-undefined">(.. System (getProperties) (get &quot;os.name&quot;))
+</code></pre>
+<p>expands to:</p>
+<pre><code class="lang-undefined">(. (. System (getProperties)) (get &quot;os.name&quot;))
+</code></pre>
+<p>but is easier to write, read, and understand. See also the -&gt; macro which can be used similarly:</p>
+<pre><code class="lang-undefined">(-&gt; (System/getProperties) (.get &quot;os.name&quot;))
+</code></pre>
+<p>(doto instance-expr (instanceMethodName-symbol args<em>)</em>)
+Macro. Evaluates instance-expr then calls all of the methods/functions with the supplied arguments in succession on the resulting object, returning it.</p>
+<pre><code class="lang-undefined">(doto (new java.util.HashMap) (.put &quot;a&quot; 1) (.put &quot;b&quot; 2))
+-&gt; {a=1, b=2}
+</code></pre>
+<p>Note the above applies to the latest Clojure SVN revision. If you are using the 20080916 release only method calls are allowed, and the syntax is:</p>
+<pre><code class="lang-undefined">(doto (new java.util.HashMap) (put &quot;a&quot; 1) (put &quot;b&quot; 2))
+-&gt; {a=1, b=2}
+</code></pre>
+<p>(Classname. args<em>)
+(new Classname args</em>)</p>
+<p>Special form.
+The args, if any, are evaluated from left to right, and passed to the constructor of the class named by Classname. The constructed object is returned.</p>
+<p>Alternative Macro Syntax</p>
+<p>As shown, in addition to the canonic special form new, Clojure supports special macroexpansion of symbols containing &apos;.&apos;:</p>
+<pre><code class="lang-undefined">(new Classname args*)
+</code></pre>
+<p>can be written</p>
+<pre><code class="lang-undefined">(Classname. args*)
+;; note trailing dot
+</code></pre>
+<p>the latter expanding into the former at macro expansion time.</p>
+<p>(instance? Class expr)
+Evaluates expr and tests if it is an instance of the class. Returns true or false</p>
+<p>(set! (. instance-expr instanceFieldName-symbol) expr)
+(set! (. Classname-symbol staticFieldName-symbol) expr)
+Assignment special form.
+When the first operand is a field member access form, the assignment is to the corresponding field. If it is an instance field, the instance expr will be evaluated, then the expr.</p>
+<p>In all cases the value of expr is returned.</p>
+<p>Note - you cannot assign to function params or local bindings. Only Java fields, Vars, Refs and Agents are mutable in Clojure.</p>
+<p>(memfn method-name arg-names*)
+Macro. Expands into code that creates a fn that expects to be passed an object and any args and calls the named instance method on the object passing the args. Use when you want to treat a Java method as a first-class fn.</p>
+<p>(map (memfn charAt i) [&quot;fred&quot; &quot;ethel&quot; &quot;lucy&quot;] [1 2 3])
+-&gt; (\r \h \y)</p>
+<p>Note it almost always preferable to do this directly now, with syntax like:</p>
+<p>(map #(.charAt %1 %2) [&quot;fred&quot; &quot;ethel&quot; &quot;lucy&quot;] [1 2 3])
+-&gt; (\r \h \y)</p>
+<p>(bean obj)
+Takes a Java object and returns a read-only implementation of the map abstraction based upon its JavaBean properties.</p>
+<p>(bean [[<a href="http://java.awt.Color/black|java.awt.Color/black" _target="blank">http://java.awt.Color/black|java.awt.Color/black</a>]])
+-&gt; {:RGB -16777216, :alpha 255, :transparency 1,
+    :class class java.awt.Color, :green 0, :blue 0,
+    :colorSpace java.awt.color.ICC_ColorSpace@c94b51, :red 0}</p>
+<p>Support for Java in Clojure Library Functions</p>
+<p>Many of the Clojure library functions have defined semantics for objects of Java types. contains? and get work on Java Maps, arrays, Strings, the latter two with integer keys. count works on Java Strings, Collections and arrays. nth works on Java Strings, Lists and arrays. seq works on Java reference arrays, Iterables and Strings. Since much of the rest of the library is built upon these functions, there is great support for using Java objects in Clojure algorithms.</p>
+<p>Implementing Interfaces and Extending Classes</p>
+<p>Clojure supports the dynamic creation of objects that implement one or more interfaces and/or extend a class with the proxy macro. The resulting objects are of an anonymous class. You can also generate statically-named classes and .class files with gen-class. As of Clojure 1.2, reify is also available for implementing interfaces.</p>
+<p>( proxy [class-and-interfaces] [args] fs+)
+class-and-interfaces - a vector of class names
+args - a (possibly empty) vector of arguments to the superclass constructor.
+f =&gt; (name [params<em>] body) or (name ([params</em>] body) ([params+] body) ...)</p>
+<p>Macro</p>
+<p>Expands to code which creates a instance of a proxy class that implements the named class/interface(s) by calling the supplied fns. A single class, if provided, must be first. If not provided it defaults to Object. The interfaces names must be valid interface types. If a method fn is not provided for a class method, the superclass method will be called. If a method fn is not provided for an interface method, an UnsupportedOperationException will be thrown should it be called. Method fns are closures and can capture the environment in which proxy is called. Each method fn takes an additional implicit first arg, which is bound to this. Note that while method fns can be provided to override protected methods, they have no other access to protected members, nor to super, as these capabilities cannot be proxied.</p>
+<p>Arrays</p>
+<p>Clojure supports the creation, reading and modification of Java arrays. It is recommended that you limit use of arrays to interop with Java libraries that require them as arguments or use them as return values.</p>
+<p>Note that many other Clojure functions work with arrays such as via the seq library. The functions listed here exist for initial creation of arrays, or to support mutation or higher performance operations on arrays.</p>
+<p>Create array from existing collection: aclone amap to-array to-array-2d into-array
+Multi-dimensional array support: aget aset to-array-2d make-array
+Type-specific array constructors: boolean-array byte-array char-array double-array float-array int-array long-array object-array short-array
+Primitive array casts: booleans bytes chars doubles floats ints longs shorts
+Mutate an array: aset
+Process an existing array: aget alength amap areduce</p>
+<p>Type Hints</p>
+<p>Clojure supports the use of type hints to assist the compiler in avoiding reflection in performance-critical areas of code. Normally, one should avoid the use of type hints until there is a known performance bottleneck. Type hints are metadata tags placed on symbols or expressions that are consumed by the compiler. They can be placed on function parameters, let-bound names, var names (when defined), and expressions:</p>
+<p>(defn len [x]
+  (.length x))</p>
+<p>(defn len2 <sup><a href="#fn_String%20x" id="reffn_String x">String x</a></sup>
+  (.length x))</p>
+<p>user=&gt; (time (reduce + (map len (repeat 1000000 &quot;asdf&quot;))))
+&quot;Elapsed time: 3007.198 msecs&quot;
+4000000
+user=&gt; (time (reduce + (map len2 (repeat 1000000 &quot;asdf&quot;))))
+&quot;Elapsed time: 308.045 msecs&quot;
+4000000</p>
+<p>Once a type hint has been placed on an identifier or expression, the compiler will try to resolve any calls to methods thereupon at compile time. In addition, the compiler will track the use of any return values and infer types for their use and so on, so very few hints are needed to get a fully compile-time resolved series of calls. Note that type hints are not needed for static members (or their return values!) as the compiler always has the type for statics.</p>
+<p>There is a <em>warn-on-reflection</em> flag (defaults to false) which will cause the compiler to warn you when it can&apos;t resolve to a direct call:</p>
+<p>(set! <em>warn-on-reflection</em> true)
+-&gt; true</p>
+<p>(defn foo [s] (.charAt s 1))
+-&gt; Reflection warning, line: 2 - call to charAt can&apos;t be resolved.
+-&gt; #user/foo</p>
+<p>(defn foo <sup><a href="#fn_String%20s" id="reffn_String s">String s</a></sup> (.charAt s 1))
+-&gt; #user/foo</p>
+<p>For function return values, the type hint can be placed before the arguments vector:</p>
+<p>(defn hinted
+  (^String [])
+  (^Integer [a])
+  (^java.util.List [a &amp; args]))</p>
+<p>-&gt; #user/hinted</p>
+<p>Aliases</p>
+<p>Clojure provides aliases for primitive Java types and arrays which do not have typical representations as Java class names. For example, long arrays (long-array []) have a type of &quot;[J&quot;.</p>
+<pre><code class="lang-undefined">int - A primitive int
+ints - An int array
+long - A primitive long
+longs - A long array
+float - A primitive float
+floats - A float array
+double - A primitive double
+doubles - A double array
+void - A void return
+short - A primitive short
+shorts - A short array
+boolean - A primitive boolean
+booleans - A boolean array
+byte - A primitive byte
+bytes - A byte array
+char - A primitive character
+chars - A character array
+</code></pre>
+<p>Support for Java Primitives</p>
+<p>Clojure has support for high-performance manipulation of, and arithmetic involving, Java primitive types in local contexts. All Java primitive types are supported: int, float, long, double, boolean, char, short, and byte.</p>
+<pre><code class="lang-undefined">let/loop-bound locals can be of primitive types, having the inferred, possibly primitive type of their init-form.
+recur forms that rebind primitive locals do so without boxing, and do type-checking for same primitive type.
+Arithmetic (+,-,*,/,inc,dec,&lt;,&lt;=,&gt;,&gt;= etc) is overloaded for primitive types where semantics are same.
+aget/aset are overloaded for arrays of primitives
+aclone, alength functions for arrays of primitives
+constructor functions for primitive arrays: float-array, int-array, etc.
+Type hints for primitive arrays - ^ints, ^floats, etc.
+Coercion ops int, float, etc. produce primitives when consumer can take primitive
+The num coercion function boxes primitives to force generic arithmetic
+Array cast functions ints longs, etc. which produce int[], long[], etc.
+A set of &quot;unchecked&quot; operations for utmost performing, but potentially unsafe, integer (int/long) ops: unchecked-multiply unchecked-dec unchecked-inc unchecked-negate unchecked-add unchecked-subtract unchecked-remainder unchecked-divide
+A dynamic var to automatically swap safe operations with unchecked operations: *unchecked-math*
+amap and areduce macros for functionally (i.e. non-destructively) processing one or more arrays in order to produce a new array or aggregate value respectively.
+</code></pre>
+<p>Rather than write this Java:</p>
+<p>static public float asum(float[] xs){
+  float ret = 0;
+  for(int i = 0; i &lt; xs.length; i++)
+    ret += xs[i];
+  return ret;
+}</p>
+<p>you can write this Clojure:</p>
+<p>(defn asum <sup><a href="#fn_floats%20xs" id="reffn_floats xs">floats xs</a></sup>
+  (areduce xs i ret (float 0)
+    (+ ret (aget xs i))))</p>
+<p>and the resulting code is exactly the same speed (when run with java -server).</p>
+<p>The best aspect of this is that you need not do anything special in your initial coding. Quite often these optimizations are unneeded. Should a bit of code be a bottleneck, you can speed it up with minor adornment:</p>
+<p>(defn foo [n]
+  (loop [i 0]
+    (if (&lt; i n)
+      (recur (inc i))
+      i)))</p>
+<p>(time (foo 100000))
+&quot;Elapsed time: 0.391 msecs&quot;
+100000</p>
+<p>(defn foo2 [n]
+  (let [n (int n)]
+    (loop [i (int 0)]
+      (if (&lt; i n)
+        (recur (inc i))
+        i))))</p>
+<p>(time (foo2 100000))
+&quot;Elapsed time: 0.084 msecs&quot;
+100000</p>
+<p>Coercions
+At times it is necessary to have a value of a particular primitive type. These coercion functions yield a value of the indicated type as long as such a coercion is possible: bigdec bigint boolean byte char double float int long num short</p>
+<p>Some optimization tips</p>
+<pre><code class="lang-undefined">All arguments are passed to Clojure fns as objects, so there&apos;s no point to putting non-array primitive type hints on fn args. Instead, use the let technique shown to place args in primitive locals if they need to participate in primitive arithmetic in the body.
+(let [foo (int bar)] ...) is the correct way to get a primitive local. Do not use ^Integer etc.
+Don&apos;t rush to unchecked math unless you want truncating operations. HotSpot does a good job at optimizing the overflow check, which will yield an exception instead of silent truncation. On a typical example, that has about a 5% difference in speed - well worth it. Also, people reading your code don&apos;t know if you are using unchecked for truncation or performance - best to reserve it for the former and comment if the latter.
+There&apos;s usually no point in trying to optimize an outer loop, in fact it can hurt you as you&apos;ll be representing things as primitives which just have to be re-boxed in order to become args to the inner call. The only exception is reflection warnings - you must get rid of them in any code that gets called frequently.
+Almost every time someone presents something they are trying to optimize with hints, the faster version has far fewer hints than the original. If a hint doesn&apos;t improve things in the end - take it out.
+Many people seem to presume only the unchecked- ops do primitive arithmetic - not so. When the args are primitive locals, regular + and * etc do primitive math with an overflow check - fast and safe.
+So, the simplest route to fast math is to leave the operators alone and just make sure the source literals and locals are primitive. Arithmetic on primitives yields primitives. If you&apos;ve got a loop (which you probably do if you need to optimize) make sure the loop locals are primitives first - then if you accidentally are producing a boxed intermediate result you&apos;ll get an error on recur. Don&apos;t solve that error by coercing your intermediate result, instead, figure out what argument or local is not primitive.
+</code></pre>
+<p>Simple XML Support
+Included with the distribution is simple XML support, found in the src/xml.clj file. All names from this file are in the xml namespace.</p>
+<p>(parse source)
+Parses and loads the source, which can be a File, InputStream or String naming a URI. Returns a tree of the xml/element struct-map, which has the keys :tag, :attrs, and :content. and accessor fns tag, attrs, and content.</p>
+<p>(xml/parse &quot;/Users/rich/dev/clojure/build.xml&quot;)
+-&gt; {:tag :project, :attrs {:name &quot;clojure&quot;, :default &quot;jar&quot;}, :content [{:tag :description, ...</p>
+<p>Calling Clojure From Java
+The clojure.java.api package provides a minimal interface to bootstrap Clojure access from other JVM languages. It does this by providing:</p>
+<ol>
+<li>The ability to use Clojure&apos;s namespaces to locate an arbitrary var, returning the var&apos;s clojure.lang.IFn interface.</li>
+<li>A convenience method read for reading data using Clojure&apos;s edn reader</li>
+</ol>
+<p>IFns provide complete access to Clojure&apos;s APIs. You can also access any other library written in Clojure, after adding either its source or compiled form to the classpath.</p>
+<p>The public Java API for Clojure consists of the following classes and interfaces:</p>
+<pre><code class="lang-undefined">clojure.java.api.Clojure
+clojure.lang.IFn
+</code></pre>
+<p>All other Java classes should be treated as implementation details, and applications should avoid relying on them.</p>
+<p>To lookup and call a Clojure function:</p>
+<p>IFn plus = Clojure.var(&quot;clojure.core&quot;, &quot;+&quot;);
+plus.invoke(1, 2);</p>
+<p>Functions in clojure.core are automatically loaded. Other namespaces can be loaded via require:</p>
+<p>IFn require = Clojure.var(&quot;clojure.core&quot;, &quot;require&quot;);
+require.invoke(Clojure.read(&quot;clojure.set&quot;));</p>
+<p>IFns can be passed to higher order functions, e.g. the example below passes plus to read:</p>
+<p>IFn map = Clojure.var(&quot;clojure.core&quot;, &quot;map&quot;);
+IFn inc = Clojure.var(&quot;clojure.core&quot;, &quot;inc&quot;);
+map.invoke(inc, Clojure.read(&quot;[1 2 3]&quot;));</p>
+<p>Most IFns in Clojure refer to functions. A few, however, refer to non-function data values. To access these, use deref instead of fn:</p>
+<p>IFn printLength = Clojure.var(&quot;clojure.core&quot;, &quot;<em>print-length</em>&quot;);
+IFn deref = Clojure.var(&quot;clojure.core&quot;, &quot;deref&quot;);
+deref.invoke(printLength);</p>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="java-interop.html" class="navigation navigation-prev " aria-label="Previous page: Java Interoperability">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="quick-look-at-types.html" class="navigation navigation-next " aria-label="Next page: Quick look at Types">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"More Java fun","level":"1.5.6","depth":2,"next":{"title":"Quick look at Types","level":"1.5.7","depth":2,"path":"basic-clojure/quick-look-at-types.md","ref":"basic-clojure/quick-look-at-types.md","articles":[]},"previous":{"title":"Java Interoperability","level":"1.5.5","depth":2,"path":"basic-clojure/java-interop.md","ref":"basic-clojure/java-interop.md","articles":[]},"dir":"ltr"},"config":{"plugins":["toggle-chapters","codeblock-disable-glossary","richquotes","disqus","exercises","quizzes","ga","toolbar","sectionx"],"styles":{"website":"styles/website.css","ebook":"styles/ebook.css","pdf":"styles/pdf.css","mobi":"styles/mobi.css","epub":"styles/epub.css"},"pluginsConfig":{"disqus":{"shortName":"clojure-practicalli","useIdentifier":false},"search":{},"lunr":{"maxIndexSize":1000000},"codeblock-disable-glossary":{},"fontsettings":{"theme":"white","family":"sans","size":2},"quizzes":{},"richquotes":{"todos":true},"sectionx":{},"highlight":{},"ga":{"token":"UA-28030709-7","configuration":"auto"},"exercises":{},"toolbar":{"buttons":[{"label":"Gitter Chat","icon":"fa fa-comments-o","url":"https://gitter.im/practicalli/chat?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge"},{"label":"GitHub","icon":"fa fa-github","url":"https://github.com/practicalli"},{"label":"Search page title on StackOverflow","icon":"fa fa-stack-overflow","url":"http://stackoverflow.com/search?q={{title}}"}]},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"toggle-chapters":{}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"Clojure, Practicalli","gitbook":">=2.0.0"},"file":{"path":"basic-clojure/more-java-fun.md","mtime":"2016-06-06T12:03:08.301Z","type":"markdown"},"gitbook":{"version":"3.0.3","time":"2016-06-10T16:27:57.111Z"},"basePath":"..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../gitbook/gitbook-plugin-exercises/jsrepl/jsrepl.js" id="jsrepl-script"></script>
+    
+    <script src="../gitbook/gitbook.js"></script>
+    <script src="../gitbook/theme.js"></script>
+    
+        
+        <script src="../gitbook/gitbook-plugin-toggle-chapters/toggle.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-codeblock-disable-glossary/disable-glossary.js"></script>
+        
+    
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/URI.js/1.16.1/URI.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-disqus/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-exercises/ace/ace.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-exercises/ace/theme-tomorrow.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-exercises/ace/mode-javascript.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-exercises/exercises.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-quizzes/quizzes.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-ga/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-toolbar/buttons.js"></script>
+        
+    
+        
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-sectionx/sectionx.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-fontsettings/buttons.js"></script>
+        
+    
+
+
+    </body>
+</html>
+

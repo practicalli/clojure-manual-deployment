@@ -1,0 +1,2071 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <title>Lighttable · Clojure, Practicalli</title>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.0.3">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-toggle-chapters/toggle.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-richquotes/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-disqus/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-exercises/exercises.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-quizzes/quizzes.css">
+                
+            
+                
+                <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-sectionx/sectionx.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+        <link rel="stylesheet" href="../styles/website.css">
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="configure-keyboard-mappings.html" />
+    
+    
+    <link rel="prev" href="../reference/books.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    Introduction
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="../using-the-workshop/">
+            
+                <a href="../using-the-workshop/">
+            
+                    
+                    How to use the workshop
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.1" data-path="../using-the-workshop/requirements.html">
+            
+                <a href="../using-the-workshop/requirements.html">
+            
+                    
+                    Technical Requirements
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2" data-path="../using-the-workshop/code-examples.html">
+            
+                <a href="../using-the-workshop/code-examples.html">
+            
+                    
+                    Code Examples
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="../development-environments/">
+            
+                <a href="../development-environments/">
+            
+                    
+                    Development Environments
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1" data-path="../development-environments/java.html">
+            
+                <a href="../development-environments/java.html">
+            
+                    
+                    Java
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2" data-path="../development-environments/leiningen.html">
+            
+                <a href="../development-environments/leiningen.html">
+            
+                    
+                    Leiningen
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3" data-path="../development-environments/lighttable.html">
+            
+                <a href="../development-environments/lighttable.html">
+            
+                    
+                    LightTable
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.4" data-path="../development-environments/other-tools.html">
+            
+                <a href="../development-environments/other-tools.html">
+            
+                    
+                    Other tools
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="../overview/">
+            
+                <a href="../overview/">
+            
+                    
+                    Overview of Clojure
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.1" data-path="../overview/purpose.html">
+            
+                <a href="../overview/purpose.html">
+            
+                    
+                    When to use Clojure
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.2" data-path="../overview/who-uses-clojure.html">
+            
+                <a href="../overview/who-uses-clojure.html">
+            
+                    
+                    Who uses Clojure
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.3" data-path="../overview/syntax.html">
+            
+                <a href="../overview/syntax.html">
+            
+                    
+                    The syntax
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.4" data-path="../overview/design.html">
+            
+                <a href="../overview/design.html">
+            
+                    
+                    Design
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.5" data-path="../overview/repl.html">
+            
+                <a href="../overview/repl.html">
+            
+                    
+                    Read, Evaluate, Print Loop (REPL)
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.6" data-path="../overview/all-bytecode-in-the-end.html">
+            
+                <a href="../overview/all-bytecode-in-the-end.html">
+            
+                    
+                    All bytecode in the end
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.7" data-path="../overview/features.html">
+            
+                <a href="../overview/features.html">
+            
+                    
+                    Features in more depth
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="../basic-clojure/">
+            
+                <a href="../basic-clojure/">
+            
+                    
+                    Some Basic Clojure
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.5.1" data-path="../basic-clojure/whats-my-environment.html">
+            
+                <a href="../basic-clojure/whats-my-environment.html">
+            
+                    
+                    Whats my environment
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.2" data-path="../basic-clojure/reading-project-file.html">
+            
+                <a href="../basic-clojure/reading-project-file.html">
+            
+                    
+                    Reading project file
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.3" data-path="../basic-clojure/threading-syntactic-sugar.html">
+            
+                <a href="../basic-clojure/threading-syntactic-sugar.html">
+            
+                    
+                    Threading syntactic sugar
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.4" data-path="../basic-clojure/show-me-the-docs.html">
+            
+                <a href="../basic-clojure/show-me-the-docs.html">
+            
+                    
+                    Show me the docs
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.5" data-path="../basic-clojure/java-interop.html">
+            
+                <a href="../basic-clojure/java-interop.html">
+            
+                    
+                    Java Interoperability
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.6" data-path="../basic-clojure/more-java-fun.html">
+            
+                <a href="../basic-clojure/more-java-fun.html">
+            
+                    
+                    More Java fun
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.7" data-path="../basic-clojure/quick-look-at-types.html">
+            
+                <a href="../basic-clojure/quick-look-at-types.html">
+            
+                    
+                    Quick look at Types
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.8" data-path="../basic-clojure/strings.html">
+            
+                <a href="../basic-clojure/strings.html">
+            
+                    
+                    Strings
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.9" data-path="../basic-clojure/numbers-maths.html">
+            
+                <a href="../basic-clojure/numbers-maths.html">
+            
+                    
+                    Numbers & Maths
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.10" data-path="../basic-clojure/ratios.html">
+            
+                <a href="../basic-clojure/ratios.html">
+            
+                    
+                    Ratios
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.11" data-path="../basic-clojure/assigning-names.html">
+            
+                <a href="../basic-clojure/assigning-names.html">
+            
+                    
+                    Assigning Names
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.12" data-path="../basic-clojure/defining-functions.html">
+            
+                <a href="../basic-clojure/defining-functions.html">
+            
+                    
+                    Defining Functions
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.13" data-path="../basic-clojure/namespace.html">
+            
+                <a href="../basic-clojure/namespace.html">
+            
+                    
+                    Namespace
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.14" data-path="../basic-clojure/control-flow.html">
+            
+                <a href="../basic-clojure/control-flow.html">
+            
+                    
+                    Control flow
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" data-path="../data-structures/">
+            
+                <a href="../data-structures/">
+            
+                    
+                    Data structures
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.6.1" data-path="../data-structures/list.html">
+            
+                <a href="../data-structures/list.html">
+            
+                    
+                    List
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.2" data-path="../data-structures/map.html">
+            
+                <a href="../data-structures/map.html">
+            
+                    
+                    Map
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.3" data-path="../data-structures/vector.html">
+            
+                <a href="../data-structures/vector.html">
+            
+                    
+                    Vector
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.4" data-path="../data-structures/set.html">
+            
+                <a href="../data-structures/set.html">
+            
+                    
+                    Set
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7" data-path="../using-data-structures/">
+            
+                <a href="../using-data-structures/">
+            
+                    
+                    Using data structures
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.7.1" data-path="../using-data-structures/applying-functions.html">
+            
+                <a href="../using-data-structures/applying-functions.html">
+            
+                    
+                    Applying functions
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.2" data-path="../using-data-structures/mapping-data-structures.html">
+            
+                <a href="../using-data-structures/mapping-data-structures.html">
+            
+                    
+                    Mapping functions
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8" data-path="../modifying-data-structures/">
+            
+                <a href="../modifying-data-structures/">
+            
+                    
+                    Modifying data structures
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.8.1" data-path="../modifying-data-structures/lists.html">
+            
+                <a href="../modifying-data-structures/lists.html">
+            
+                    
+                    Lists
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.2" data-path="../modifying-data-structures/maps.html">
+            
+                <a href="../modifying-data-structures/maps.html">
+            
+                    
+                    Maps
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.3" data-path="../modifying-data-structures/vectors.html">
+            
+                <a href="../modifying-data-structures/vectors.html">
+            
+                    
+                    Vectors
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.4" data-path="../modifying-data-structures/sets.html">
+            
+                <a href="../modifying-data-structures/sets.html">
+            
+                    
+                    Sets
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9" data-path="../defining-behaviour-with-functions/">
+            
+                <a href="../defining-behaviour-with-functions/">
+            
+                    
+                    Defing behaviour with Functions
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.9.1" data-path="../defining-behaviour-with-functions/syntax.html">
+            
+                <a href="../defining-behaviour-with-functions/syntax.html">
+            
+                    
+                    Syntax
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.2" data-path="../defining-behaviour-with-functions/calling-functions.html">
+            
+                <a href="../defining-behaviour-with-functions/calling-functions.html">
+            
+                    
+                    Calling functions
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.3" data-path="../defining-behaviour-with-functions/examples.html">
+            
+                <a href="../defining-behaviour-with-functions/examples.html">
+            
+                    
+                    Examples
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.4" data-path="../defining-behaviour-with-functions/parameters.html">
+            
+                <a href="../defining-behaviour-with-functions/parameters.html">
+            
+                    
+                    Parameters
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.5" data-path="../defining-behaviour-with-functions/using-functions-over-data-structures.html">
+            
+                <a href="../defining-behaviour-with-functions/using-functions-over-data-structures.html">
+            
+                    
+                    Using Functions over data structures
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10" data-path="../defining-functions/">
+            
+                <a href="../defining-functions/">
+            
+                    
+                    Defining fuctions
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.10.1" data-path="../defining-functions/let-local-values.html">
+            
+                <a href="../defining-functions/let-local-values.html">
+            
+                    
+                    let local values
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11" data-path="../control-flow/">
+            
+                <a href="../control-flow/">
+            
+                    
+                    Control flow
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.11.1" data-path="../control-flow/if.html">
+            
+                <a href="../control-flow/if.html">
+            
+                    
+                    if
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11.2" data-path="../control-flow/cond.html">
+            
+                <a href="../control-flow/cond.html">
+            
+                    
+                    cond
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11.3" data-path="../control-flow/when.html">
+            
+                <a href="../control-flow/when.html">
+            
+                    
+                    when
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12" data-path="../local-assignement/">
+            
+                <a href="../local-assignement/">
+            
+                    
+                    Local Assignment
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.13" data-path="../simple-project/">
+            
+                <a href="../simple-project/">
+            
+                    
+                    Simple project
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.13.1" data-path="../simple-project/create-project.html">
+            
+                <a href="../simple-project/create-project.html">
+            
+                    
+                    Create a project
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.13.2" data-path="../simple-project/run-the-repl.html">
+            
+                <a href="../simple-project/run-the-repl.html">
+            
+                    
+                    Run the REPL
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.14" data-path="../what-is-functional-programming/">
+            
+                <a href="../what-is-functional-programming/">
+            
+                    
+                    What is Functional Programming
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.15" data-path="../thinking-functionally/">
+            
+                <a href="../thinking-functionally/">
+            
+                    
+                    Thinking Functionally
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.15.1" data-path="../thinking-functionally/side-effects.html">
+            
+                <a href="../thinking-functionally/side-effects.html">
+            
+                    
+                    Side effects
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.15.2" data-path="../thinking-functionally/pure-functions.html">
+            
+                <a href="../thinking-functionally/pure-functions.html">
+            
+                    
+                    Pure functions
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.15.3" data-path="../thinking-functionally/impure-functions.html">
+            
+                <a href="../thinking-functionally/impure-functions.html">
+            
+                    
+                    Impure functions
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.15.4" data-path="../thinking-functionally/first-class-functions.html">
+            
+                <a href="../thinking-functionally/first-class-functions.html">
+            
+                    
+                    First Class functions
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.15.5" data-path="../thinking-functionally/homoiconicity.html">
+            
+                <a href="../thinking-functionally/homoiconicity.html">
+            
+                    
+                    Homoiconicity
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.15.6" data-path="../thinking-functionally/higher-order-functions.html">
+            
+                <a href="../thinking-functionally/higher-order-functions.html">
+            
+                    
+                    Higher Order functions
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.15.7" data-path="../thinking-functionally/chaining-functions.html">
+            
+                <a href="../thinking-functionally/chaining-functions.html">
+            
+                    
+                    Chaining functions
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.15.7.1" data-path="../thinking-functionally/threading-macros.html">
+            
+                <a href="../thinking-functionally/threading-macros.html">
+            
+                    
+                    Threading macros
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.15.7.2" data-path="../thinking-functionally/example-hitchhikers-guide.html">
+            
+                <a href="../thinking-functionally/example-hitchhikers-guide.html">
+            
+                    
+                    Example: Hitchhikers Guide
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.15.8" data-path="../thinking-functionally/immutable.html">
+            
+                <a href="../thinking-functionally/immutable.html">
+            
+                    
+                    Immutability
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.15.8.1" data-path="../thinking-functionally/copying-collections.html">
+            
+                <a href="../thinking-functionally/copying-collections.html">
+            
+                    
+                    Copying collections
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.15.8.2" data-path="../thinking-functionally/persistent-data-structures.html">
+            
+                <a href="../thinking-functionally/persistent-data-structures.html">
+            
+                    
+                    Persistent data structures
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.15.9" data-path="../thinking-functionally/list-comprehension.html">
+            
+                <a href="../thinking-functionally/list-comprehension.html">
+            
+                    
+                    List Comprehension
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.15.10" data-path="../thinking-functionally/lazy-evaluation.html">
+            
+                <a href="../thinking-functionally/lazy-evaluation.html">
+            
+                    
+                    Lazy Evaluation
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.15.11" data-path="../thinking-functionally/sequences.html">
+            
+                <a href="../thinking-functionally/sequences.html">
+            
+                    
+                    Sequences
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.15.12" data-path="../thinking-functionally/sequence-abstractions.html">
+            
+                <a href="../thinking-functionally/sequence-abstractions.html">
+            
+                    
+                    Sequence-abstraction
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.15.13" data-path="../thinking-functionally/functors.html">
+            
+                <a href="../thinking-functionally/functors.html">
+            
+                    
+                    Functors
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.15.14" data-path="../thinking-functionally/arity.html">
+            
+                <a href="../thinking-functionally/arity.html">
+            
+                    
+                    Arity
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.15.15" data-path="../thinking-functionally/pattern-matching.html">
+            
+                <a href="../thinking-functionally/pattern-matching.html">
+            
+                    
+                    Pattern matching
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.15.16" data-path="../thinking-functionally/polymorphism.html">
+            
+                <a href="../thinking-functionally/polymorphism.html">
+            
+                    
+                    Polymorphism
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.15.17" data-path="../thinking-functionally/recursion.html">
+            
+                <a href="../thinking-functionally/recursion.html">
+            
+                    
+                    Recursion
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.15.18" data-path="../thinking-functionally/recursion-polymorphism.html">
+            
+                <a href="../thinking-functionally/recursion-polymorphism.html">
+            
+                    
+                    Recursion & Polymorphism
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.15.19" data-path="../thinking-functionally/tail-recursion.html">
+            
+                <a href="../thinking-functionally/tail-recursion.html">
+            
+                    
+                    Tail recursion
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.15.20" data-path="../thinking-functionally/partial-functions.html">
+            
+                <a href="../thinking-functionally/partial-functions.html">
+            
+                    
+                    Currying & Partial Functions
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.15.21" data-path="../thinking-functionally/anonymous-functions.html">
+            
+                <a href="../thinking-functionally/anonymous-functions.html">
+            
+                    
+                    Anonymous Functions
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.15.22" data-path="../thinking-functionally/naming.html">
+            
+                <a href="../thinking-functionally/naming.html">
+            
+                    
+                    Naming
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.15.22.1" data-path="../thinking-functionally/global-definitions.html">
+            
+                <a href="../thinking-functionally/global-definitions.html">
+            
+                    
+                    Global definitions
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.15.22.2" data-path="../thinking-functionally/local-bindings.html">
+            
+                <a href="../thinking-functionally/local-bindings.html">
+            
+                    
+                    Local Bindings
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.15.22.3" data-path="../thinking-functionally/private-functions.html">
+            
+                <a href="../thinking-functionally/private-functions.html">
+            
+                    
+                    Private functions
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.16" data-path="../thinking-functionally/managing-state-changes.html">
+            
+                <a href="../thinking-functionally/managing-state-changes.html">
+            
+                    
+                    Managing state changes
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.17" data-path="../libraries/">
+            
+                <a href="../libraries/">
+            
+                    
+                    Libraries
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.17.1" data-path="../libraries/clojars.html">
+            
+                <a href="../libraries/clojars.html">
+            
+                    
+                    Clojars
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.17.2" data-path="../libraries/om.html">
+            
+                <a href="../libraries/om.html">
+            
+                    
+                    om
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.17.3" data-path="../libraries/edn.html">
+            
+                <a href="../libraries/edn.html">
+            
+                    
+                    edn
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.18" data-path="../testing/">
+            
+                <a href="../testing/">
+            
+                    
+                    Testing
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.18.1" data-path="../testing/">
+            
+                <a href="../testing/">
+            
+                    
+                    Testing
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.18.2" data-path="../testing/">
+            
+                <a href="../testing/">
+            
+                    
+                    Testing
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.18.3" data-path="../testing/">
+            
+                <a href="../testing/">
+            
+                    
+                    Testing
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.19" data-path="../leiningen/">
+            
+                <a href="../leiningen/">
+            
+                    
+                    Leiningen Configuration
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.19.1" data-path="../leiningen/create-a-project.html">
+            
+                <a href="../leiningen/create-a-project.html">
+            
+                    
+                    Create a project
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.19.2" data-path="../leiningen/run-the-repl.html">
+            
+                <a href="../leiningen/run-the-repl.html">
+            
+                    
+                    Run the REPL
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.19.3" data-path="../leiningen/profile.html">
+            
+                <a href="../leiningen/profile.html">
+            
+                    
+                    Profiles overview
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.19.4" data-path="../leiningen/adding-a-dev-profile.html">
+            
+                <a href="../leiningen/adding-a-dev-profile.html">
+            
+                    
+                    Adding a dev profile
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.19.5" data-path="../leiningen/templates.html">
+            
+                <a href="../leiningen/templates.html">
+            
+                    
+                    Templates
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.19.6" data-path="../leiningen/create-a-template.html">
+            
+                <a href="../leiningen/create-a-template.html">
+            
+                    
+                    Create a template
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.19.7" data-path="../leiningen/plugins.html">
+            
+                <a href="../leiningen/plugins.html">
+            
+                    
+                    Plugins
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.20" data-path="../explaining-macros.html">
+            
+                <a href="../explaining-macros.html">
+            
+                    
+                    Explaining Macros
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.21" data-path="../work-in-progress.html">
+            
+                <a href="../work-in-progress.html">
+            
+                    
+                    Work in Progress
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.22" data-path="../where-next.html">
+            
+                <a href="../where-next.html">
+            
+                    
+                    Where next
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.23" data-path="../reference/">
+            
+                <a href="../reference/">
+            
+                    
+                    Reference
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.23.1" data-path="../reference/basic-syntax.html">
+            
+                <a href="../reference/basic-syntax.html">
+            
+                    
+                    Basic Syntax
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.23.2" data-path="../reference/naming.html">
+            
+                <a href="../reference/naming.html">
+            
+                    
+                    Naming
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.23.3" data-path="../reference/naming-conventions.html">
+            
+                <a href="../reference/naming-conventions.html">
+            
+                    
+                    Naming Conventions
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.23.4" data-path="../reference/functions.html">
+            
+                <a href="../reference/functions.html">
+            
+                    
+                    Functions
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.23.5" data-path="../reference/sequences.html">
+            
+                <a href="../reference/sequences.html">
+            
+                    
+                    Sequences
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.23.6" data-path="../reference/control-flow.html">
+            
+                <a href="../reference/control-flow.html">
+            
+                    
+                    Control Flow
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.23.7" data-path="../reference/persistent-data-structures.html">
+            
+                <a href="../reference/persistent-data-structures.html">
+            
+                    
+                    Persistent Data Structures
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.23.8" data-path="../reference/changing-state.html">
+            
+                <a href="../reference/changing-state.html">
+            
+                    
+                    Changing State
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.23.9" data-path="../reference/reader-macros.html">
+            
+                <a href="../reference/reader-macros.html">
+            
+                    
+                    Reader Macros
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.23.10" data-path="../reference/core-async.html">
+            
+                <a href="../reference/core-async.html">
+            
+                    
+                    Core.async
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.23.11" data-path="../reference/prasmatic-schema.html">
+            
+                <a href="../reference/prasmatic-schema.html">
+            
+                    
+                    Prasmatic Schema
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.23.12" data-path="../reference/books.html">
+            
+                <a href="../reference/books.html">
+            
+                    
+                    Books on Clojure
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.24" data-path="./">
+            
+                <a href="./">
+            
+                    
+                    Lighttable
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.24.1" data-path="configure-keyboard-mappings.html">
+            
+                <a href="configure-keyboard-mappings.html">
+            
+                    
+                    Configure Keyboard mappings
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >Lighttable</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="lighttable">Lighttable</h1>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="../reference/books.html" class="navigation navigation-prev " aria-label="Previous page: Books on Clojure">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="configure-keyboard-mappings.html" class="navigation navigation-next " aria-label="Next page: Configure Keyboard mappings">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"Lighttable","level":"1.24","depth":1,"next":{"title":"Configure Keyboard mappings","level":"1.24.1","depth":2,"path":"lighttable/configure-keyboard-mappings.md","ref":"lighttable/configure-keyboard-mappings.md","articles":[]},"previous":{"title":"Books on Clojure","level":"1.23.12","depth":2,"path":"reference/books.md","ref":"reference/books.md","articles":[]},"dir":"ltr"},"config":{"plugins":["toggle-chapters","codeblock-disable-glossary","richquotes","disqus","exercises","quizzes","ga","toolbar","sectionx"],"styles":{"website":"styles/website.css","ebook":"styles/ebook.css","pdf":"styles/pdf.css","mobi":"styles/mobi.css","epub":"styles/epub.css"},"pluginsConfig":{"disqus":{"shortName":"clojure-practicalli","useIdentifier":false},"search":{},"lunr":{"maxIndexSize":1000000},"codeblock-disable-glossary":{},"fontsettings":{"theme":"white","family":"sans","size":2},"quizzes":{},"richquotes":{"todos":true},"sectionx":{},"highlight":{},"ga":{"token":"UA-28030709-7","configuration":"auto"},"exercises":{},"toolbar":{"buttons":[{"label":"Gitter Chat","icon":"fa fa-comments-o","url":"https://gitter.im/practicalli/chat?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge"},{"label":"GitHub","icon":"fa fa-github","url":"https://github.com/practicalli"},{"label":"Search page title on StackOverflow","icon":"fa fa-stack-overflow","url":"http://stackoverflow.com/search?q={{title}}"}]},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"toggle-chapters":{}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"Clojure, Practicalli","gitbook":">=2.0.0"},"file":{"path":"lighttable/index.md","mtime":"2016-05-07T17:06:05.103Z","type":"markdown"},"gitbook":{"version":"3.0.3","time":"2016-06-10T16:27:57.111Z"},"basePath":"..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../gitbook/gitbook-plugin-exercises/jsrepl/jsrepl.js" id="jsrepl-script"></script>
+    
+    <script src="../gitbook/gitbook.js"></script>
+    <script src="../gitbook/theme.js"></script>
+    
+        
+        <script src="../gitbook/gitbook-plugin-toggle-chapters/toggle.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-codeblock-disable-glossary/disable-glossary.js"></script>
+        
+    
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/URI.js/1.16.1/URI.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-disqus/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-exercises/ace/ace.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-exercises/ace/theme-tomorrow.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-exercises/ace/mode-javascript.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-exercises/exercises.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-quizzes/quizzes.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-ga/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-toolbar/buttons.js"></script>
+        
+    
+        
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-sectionx/sectionx.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-fontsettings/buttons.js"></script>
+        
+    
+
+
+    </body>
+</html>
+

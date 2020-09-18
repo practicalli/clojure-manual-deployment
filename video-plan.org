@@ -1,0 +1,39 @@
+* Install Clojure cli tools
+- cli tools install options, especially for windows
+- where things are installed ?
+- the .clojure directory
+- adding aliases
+- install practicalli/clojure.deps
+- alternative: using borkdude tool
+
+* Using the CLI
+** Clojure evaluation
+evaluate expressions quickly
+
+clojure -e ,,,
+
+clojure -e (+ 1 2 3 4)
+
+Put expressions into a make file
+
+clojure -e (+ 4 (* 4 7))
+
+clojure -e (map inc [1 2 3 4 5])
+
+clojure -e (partition
+             2
+             (clojure.string/split
+               "Mary had a little lamb whose fleece was white as snow"
+               #" "))
+
+** Run the repl
+
+** overview of most common options
+Keep this simple as most will be done in rebel readline.
+show difference between clojure and clj (which needs rlwrap installed)
+
+* Run repl with rebl.readline
+** Using rebel features
+- eldoc style function signatures
+- doc and source support
+- loading files
